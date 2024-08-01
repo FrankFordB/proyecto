@@ -12,8 +12,8 @@
 
     /* ICONOS */
 
-
 font-family: var(--fuente-montserrat);
+
 
 * {
     margin: 0;
@@ -141,6 +141,7 @@ body {
 .banner_conteiner_vermapa:hover {
     background-color: rgba(199, 186, 167, 0.4);
     cursor: pointer;
+    transition: all 0.8s;
     color: var(--color-negro);
 }
 
@@ -181,7 +182,7 @@ body {
 }
 .banner_conteiner_redes_iconos:hover {
     text-shadow: 2px -2px 36px #db7e14;
-
+    transition: all 0.8s;
 }
 
 .banner_conteiner_redes_iconos2 {
@@ -198,7 +199,7 @@ body {
 }
 .banner_conteiner_redes_iconos2:hover {
     text-shadow: 2px -2px 36px #db7e14;
-
+    transition: all 0.8s;
 }
 
 /* NAV *//* NAV *//* NAV *//* NAV *//* NAV *//* NAV *//* NAV */
@@ -228,9 +229,10 @@ body {
 }
 
 .header_selector_links:hover {
-    font-size: 1.01rem;
+    
     display: flex;
     color: var(--color-primario);
+    transition: all 0.8s;
     text-shadow: 2px -2px 18px #db7e14;
     }
 
@@ -405,7 +407,7 @@ body {
     background-color: rgba(144, 148, 150, 0.27);
     border-radius: 0.5rem;
     border-bottom: solid #000000;
-    
+    cursor: pointer;
     margin-bottom: 3rem;
     box-shadow: 5px -6px 3px rgb(15, 15, 15, .5);
         
@@ -414,7 +416,7 @@ body {
     background-color:rgba(144, 148, 150, 0.5);
     .hamburguesas_contenido_texto_papas {
     display: flex;
-    
+    transition: all 0.6s;
     border-bottom: solid #000000;
     background-color: rgba(173, 0, 0, 0.432) 
 }}
@@ -533,24 +535,32 @@ body {
     justify-content: center;
     text-align: center;
     margin-left: 20%;
-    
+    transition: all 0.8s;
     
 }
 .boton_cerrar_modal{
-    font-size: 2.4rem;
-    justify-content: center;
-    max-width: 20px;
-    display: flex;
-    margin-left: 1rem;
-    color: #cccbcb;
+    display: none;
+    color: #ffffff;
+    z-index: 100;
     text-decoration: none;
-    
+    cursor: pointer;
+        
+}
+.X_modal {
+    font-size:1.2rem;
+    color: #f1f1f1;
+    z-index: 101;
+    margin-left: 20px;
+    margin-top: 10px;
+    display: flex;
+    position: fixed;
 }
 .boton-abrir-modal{
     display: flex;
     flex-direction: row; 
     align-items: center;
     align-self: center;
+    transition: all 0.8s;
 }
 .modal_caja_de_foto {
     display: flex;
@@ -559,13 +569,14 @@ body {
 
 }
 .modales{
-    background-image: url(/Imagenes/maderanegra.jpg);
+    background-image: url(Imagenes\maderanegra.jpg);
     background-size: 48% 60%;
-
+    transition: all 0.8s;
 }
 .modal_caja {
     display: flex;
-    
+    transition-property: all;
+    transition: all 0.8s;
     background-repeat: no-repeat;
     width: 70rem;
     max-width: 100%;
@@ -582,6 +593,7 @@ display: flex;
 align-content: center;
 flex-direction: column;
 background-color: #ffffff;
+transition: all 0.8s;
 }
 .modal_titulos {
     align-self: center;
@@ -751,6 +763,7 @@ background-color: #ffffff;
 
 .footer_madre_columna1_vinculos:hover{
     text-decoration: underline;
+    transition: all 0.8s;
 }
 
 .footer_madre_icono_ubicacion {
@@ -774,7 +787,7 @@ background-color: #ffffff;
 
 .footer_madre_Desarrolador:hover {
     text-decoration: underline;
-        
+    transition: all 0.8s;
 }
 
 /* CHEDDAR */
@@ -817,7 +830,7 @@ background-color: #ffffff;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-image: url(/Imagenes/maderanegra.jpg);
+    background-image: url(Imagenes\maderanegra.jpg);
     background-size:100%
     
     

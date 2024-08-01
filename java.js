@@ -12,8 +12,11 @@ botonCerrarModal.addEventListener("click",()=>{
     modal.close();
 });
 botonCerrarModal1.addEventListener("click",()=>{
-    modal.close();
+  modal.close();
 });
+// botonCerrarModal1.addEventListener("click",()=>{
+//     modal.close();
+// });
 
 
 

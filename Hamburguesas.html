@@ -7,7 +7,7 @@
     <title>MyBurger</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link class="icono" rel="icon" href="/Imagenes/fotomyburger.png" />
+    <link class="icono" rel="icon" href="Imagenes\fotomyburger.png" />
 
 </head>
 
@@ -17,14 +17,14 @@
             <div class="home_master1">
                 <header>
 
-                    <img class="banner_conteiner_imagen" src="/Imagenes/bannernuevo1.jpg" alt="HaburguesaBacon"
+                    <img class="banner_conteiner_imagen" src="Imagenes\bannernuevo1.jpg" alt="HaburguesaBacon"
                         title="hamburguesa" />
 
 
                     <!-- HEADER --><!-- HEADER --><!-- HEADER --><!-- HEADER --><!-- HEADER --><!-- HEADER --><!-- HEADER -->
 
                     <main class="banner_conteiner">
-                        <img title="Myburger" class="banner_conteiner_foto_myburger" src="/Imagenes/fotomyburger.png">
+                        <img title="Myburger" class="banner_conteiner_foto_myburger" src="Imagenes\fotomyburger.png">
                         <div class="banner_conteiner_master">
 
                             <div class="banner_conteiner_titulo">
@@ -81,15 +81,19 @@
                         <div class="links" href="https://www.youtube.com/watch?v=35XFAkwmU4c" id="boton_abrir_modal">
                             
                             <!-- MODAL --><!-- MODAL --><!-- MODAL --><!-- MODAL --><!-- MODAL -->
-                           
-                            <button id="boton-abrir-modal">
+                            
+                            <button id="boton-abrir-modal" style="display: none;">
                                 Hola</button>
                             
                             <dialog class="modales" id="modal">
                                 <div class="modal_caja">
                                 <div class="modal_caja1">
-                                    <a class="boton_cerrar_modal" id="boton-cerrar-modal1" href="#">&times;</a>
-                                    <div class="modal_caja_de_foto"><img class="modal_foto" src="/Imagenes/Afrodita.png"/> </div>
+                                    
+                                    
+                                    <input type="radio" class="boton_cerrar_modal" id="boton-cerrar-modal1"></input>
+                                    <label class="X_modal" for="boton-cerrar-modal1">X</label>
+                                
+                                    <div class="modal_caja_de_foto"><img class="modal_foto" src="Imagenes\Afrodita.png"/> </div>
 
                                 </div>
                             <div class="modal_caja2">
@@ -122,7 +126,8 @@
                                     <p style="margin-top: 1rem ;">Cantidad</p>
                                     <label for="price"></label>
                                     <input style="text-align: center; align-self: center;width: 2rem;height: 1.8rem;" type="number" id="modal_cantidad_salsa" value="0">
-                                    <button class="modal_botonesmas" onclick="restar()">-</button>
+                                    <button class="modal_botonesmas" id="modal_botonesmas1" onclick="restar()">-</button>
+                                    
                                     <button class="modal_botonesmas" onclick="sumar()">+</button>
                                     <p style="font-weight: 600;margin-top: 1rem; padding-bottom: 0.5rem; border-bottom: 0.01rem solid #00000048; "></p>                                
                                 <br> 
@@ -197,19 +202,18 @@
                                     </div>
                                 </div>
                                 
-                                <button id="boton-cerrar-modal">Cerrar modal</button>
+                                <button id="boton-cerrar-modal">Cerrar eseses modal</button>
                             </div>
                         </div>
                         </dialog>
                         
 
 
-
-
+                        <label for="boton-abrir-modal" > 
                             <div class="hamburguesa_contenido_submaster">
-
+                                
                                 <div class="hamburguesa_contenido_imagen">
-                                    <img class="hamburguesa_contenido_imagen1" src="./Imagenes/HaburguesaBacon11.jpg"
+                                    <img class="hamburguesa_contenido_imagen1" src="./Imagenes\HaburguesaBacon11.jpg"
                                         alt="HamburguesaBacon" id="linkbacon" />
                                 </div>
                                 <div id="linkbacon" class="hamburguesas_contenido_hijo">
@@ -221,10 +225,10 @@
                                 <div id="linkbacon2" class="hamburguesas_contenido_texto_papas">
                                     <p id="linkbacon2">Papas incluidas✅</p>
                                 </div>
-
+                            
                             </div>
                         </div>
-
+                    </label>
 
                         <!-- MODAL   --><!-- MODAL   --><!-- MODAL   --><!-- MODAL   --><!-- MODAL   --><!-- MODAL   -->
 
@@ -233,7 +237,7 @@
                         <a class="links" href="https://www.youtube.com/watch?v=35XFAkwmU4c" id="linkbacon">
                             <div class="hamburguesa_contenido_submaster">
                                 <div class="hamburguesa_contenido_imagen">
-                                    <img class="hamburguesa_contenido_imagen1" src="./Imagenes/Hamburguesa222.jpg"
+                                    <img class="hamburguesa_contenido_imagen1" src="Imagenes\Hamburguesa222.jpg"
                                         alt="HamburguesaBacon" id="linkbacon" />
                                 </div>
                                 <div id="linkbacon" class="hamburguesas_contenido_hijo">
@@ -252,7 +256,7 @@
                         <a class="links" href="https://www.youtube.com/watch?v=35XFAkwmU4c" id="linkbacon">
                             <div class="hamburguesa_contenido_submaster">
                                 <div class="hamburguesa_contenido_imagen">
-                                    <img class="hamburguesa_contenido_imagen1" src="./Imagenes/Hamburguesa333.jpg"
+                                    <img class="hamburguesa_contenido_imagen1" src="Imagenes\Hamburguesa333.jpg"
                                         alt="HamburguesaBacon" id="linkbacon" />
                                 </div>
                                 <div id="linkbacon" class="hamburguesas_contenido_hijo">
@@ -273,7 +277,7 @@
                         <a class="links" href="https://www.youtube.com/watch?v=35XFAkwmU4c" id="linkbacon">
                             <div class="hamburguesa_contenido_submaster">
                                 <div class="hamburguesa_contenido_imagen">
-                                    <img class="hamburguesa_contenido_imagen1" src="./Imagenes/Hamburguesa444.jpg"
+                                    <img class="hamburguesa_contenido_imagen1" src="Imagenes\Hamburguesa444.jpg"
                                         alt="HamburguesaBacon" id="linkbacon" />
                                 </div>
                                 <div id="linkbacon" class="hamburguesas_contenido_hijo">
@@ -291,7 +295,7 @@
                         <a class="links" href="https://www.youtube.com/watch?v=35XFAkwmU4c" id="linkbacon">
                             <div class="hamburguesa_contenido_submaster">
                                 <div class="hamburguesa_contenido_imagen">
-                                    <img class="hamburguesa_contenido_imagen1" src="./Imagenes/Hamburguesa555.jpg"
+                                    <img class="hamburguesa_contenido_imagen1" src="Imagenes\Hamburguesa555.jpg"
                                         alt="HamburguesaBacon" id="linkbacon" />
                                 </div>
                                 <div id="linkbacon" class="hamburguesas_contenido_hijo">
@@ -309,7 +313,7 @@
                         <a class="links" href="https://www.youtube.com/watch?v=35XFAkwmU4c" id="linkbacon">
                             <div class="hamburguesa_contenido_submaster">
                                 <div class="hamburguesa_contenido_imagen">
-                                    <img class="hamburguesa_contenido_imagen1" src="./Imagenes/Hamburguesa666.jpg"
+                                    <img class="hamburguesa_contenido_imagen1" src="Imagenes\Hamburguesa666.jpg"
                                         alt="HamburguesaBacon" id="linkbacon" />
                                 </div>
                                 <div id="linkbacon" class="hamburguesas_contenido_hijo">
@@ -333,7 +337,7 @@
         <!-- FOOTER COMIENZO -->
         <footer class="footer_madre">
             <div>
-                <img src="/Imagenes/fotomyburger.png" class="footer_madre_imagen">
+                <img src="Imagenes\fotomyburger.png" class="footer_madre_imagen">
             </div>
             <div class="footer_madre_columna1">
                 <h2 class="footer_madre_columna1_titulo">Nuestras Carnes </h2>
@@ -347,7 +351,7 @@
                 <h2 class="footer_madre_columna1_titulo">¿Donde nos encontramos?</h2>
                 <a href="https://www.google.com/maps/place/37%C2%B023'56.8%22S+68%C2%B055'22.1%22W/@-37.3989748,-68.9225452,19.4z/data=!4m4!3m3!8m2!3d-37.3991026!4d-68.9228061?entry=ttu"
                     target="_blank" id="RDLS" class="footer_madre_columna1_vinculos"> <img
-                        class="footer_madre_icono_ubicacion" src="/Imagenes/Carnes/ubicacion3.png" />
+                        class="footer_madre_icono_ubicacion" src="Imagenes\Carnes\ubicacion3.png" />
                     Mendoza 1278 <br> <br> Rincon de los sauces, Neuquen(8319)</a>
             </div>
 
