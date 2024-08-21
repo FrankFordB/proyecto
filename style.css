@@ -18,6 +18,7 @@ font-family: var(--fuente-montserrat);
 * {
     margin: 0;
     padding: 0;
+    box-sizing: content-box;
 }    
 }
 .icono {
@@ -76,36 +77,39 @@ body {
 }
 
 .banner_conteiner_foto_myburger {
-    display: flex;
-    justify-content: left;
-    height: 99%;
-    border-radius: 20px 0px 0px 10px;
-    box-shadow:0px -3px 5px rgb(15, 15, 15, .5);
+    
+    border-radius: 20px 0px 0px 20px;
+    
     
 }
 
+.headermaster{
+    display: flex;
+    flex-direction: column;
+}
 .banner_conteiner_master {
     display: flex;
-    width: 80%;
+    width: 90%;
+    height: 100%;
     background-image: url('/Imagenes/bannermaderanegra.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     box-sizing: border-box;
-    border-radius: 0px 20px 10px 0px;
+    border-radius: 20px 20px 10px 10px;
     box-shadow: 3px -4px 24px rgba(15, 15, 15, 0.404);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     justify-content: space-around;
+    padding: auto;
 }
 
 
 .banner_conteiner_titulo {
     text-align: center;
-    width: 23%;
-    height: 10vh;
+    width: 8%;
+    height: 11.5vh;
     margin-left: 1%;
-    font-size: 0.9rem;
     display: flex;
-    justify-content: space-around;
+    gap: 5px;
     flex-direction: column;
     align-items: center;
     align-self: center;
@@ -116,7 +120,8 @@ body {
 
 .banner_conteiner_myburger {
     font-family: "Krona One", sans-serif;
-    font-size: 30px;
+    font-size: 28px;
+
     text-align: center;
     text-shadow: 11px -4px 5px #000000;
     color: var(--color-negro);
@@ -129,7 +134,7 @@ body {
     text-align: center;
     align-self: center;
     padding: 0.2rem 0rem ;
-    
+    margin-bottom: 1px;
     border-radius: 0.21rem;
     background-color: rgba(112, 119, 126, 0.4);;
     color: var(--color-negro);
@@ -185,6 +190,7 @@ body {
     text-shadow: 2px -2px 36px #db7e14;
     transition: all 0.8s;
 }
+
 
 .banner_conteiner_redes_iconos2 {
     display: flex;
@@ -826,10 +832,7 @@ transition: all 0.8s;
     box-shadow: 13px -3px 5px rgb(15, 15, 15, .5);;
 }
 .bodercolor {
-    background-color: rgba(20, 20, 20, 0.479);
-    text-align: center;
-    
-    
+    background-color: rgba(20, 20, 20, 0.534);
 }
 .selection1 {
     width: 100%;
@@ -1054,13 +1057,10 @@ transition: all 0.8s;
         justify-content: center;
         padding: auto;
         margin: auto;
-        
-        
-    }
+}
     .footer_madre_columna3_master {
         padding-bottom: 20px; 
-
-    }
+}
     
     
 }
