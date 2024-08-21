@@ -87,7 +87,7 @@ body {
 .banner_conteiner_master {
     display: flex;
     width: 80%;
-    background-image: url(/Imagenes/bannermaderanegra.jpg);
+    background-image: url('/Imagenes/bannermaderanegra.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     box-sizing: border-box;
@@ -570,7 +570,7 @@ body {
 
 }
 .modales{
-    background-image: url(Imagenes\maderanegra.jpg);
+    background-image: url('Imagenes/maderanegra.jpg');
     background-size: 48% 60%;
     transition: all 0.8s;
 }
@@ -825,17 +825,24 @@ transition: all 0.8s;
     padding: 2rem;
     box-shadow: 13px -3px 5px rgb(15, 15, 15, .5);;
 }
+.bodercolor {
+    background-color: rgba(20, 20, 20, 0.479);
+    text-align: center;
+    
+    
+}
 .selection1 {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-image: url(/Imagenes/maderanegra.jpg);
+    background-image: url('Imagenes/maderanegra.jpg');
     background-size:40%;
     
     
-}    .inicio_hamburguesa_inicio_titulos{
+}  
+.inicio_hamburguesa_inicio_titulos{
         flex-direction: column;
         
     }
