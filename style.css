@@ -87,7 +87,7 @@ body {
 .banner_conteiner_master {
     display: flex;
     width: 80%;
-    background-image: url(/Imagenes/bannermaderanegra.jpg);
+    background-image: url(Imagenes/bannermaderanegra.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     box-sizing: border-box;
@@ -831,7 +831,7 @@ transition: all 0.8s;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-image: url(/Imagenes/maderanegra.jpg);
+    background-image: url(Imagenes/maderanegra.jpg);
     background-size:40%;
     
     
