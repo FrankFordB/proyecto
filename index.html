@@ -104,11 +104,17 @@
 
                     </main>
                     <!-- NAV--><!-- NAV--><!-- NAV--><!-- NAV--><!-- NAV-->
-                    <div class="header_selector_madre">
-                        <a class="header_selector_links" href="index.html">Inicio</a>
+                    <div id="menu_p"> 
+                    <input type="checkbox" style="display: none;" onclick="btnMenu()" id="btn_menu">
+                    <label for="btn_menu" style="cursor: pointer; font-size: 36px;" class="header_selector_menu_desplegable"><p></p><h5>Menu</h5> <p> =</p></label>
+                </div>
+                    <div class="header_selector_madre" id="menuIHPP">
+                        <label for="btn_menu" class="header_selector_links1"><p></p><p>Inicio</p><span><p>=</p></span></label>
+                        <a class="header_selector_links" href="Papas.html">Hace tu pedido</a>
                         <a class="header_selector_links" href="Hamburguesas.html">Hamburguesa</a>
                         <a class="header_selector_links" href="Cheddar.html">Pileta de cheddar</a>
                         <a class="header_selector_links" href="Papas.html">Papas</a>
+                        
 
                     </div>
             </div>
@@ -275,9 +281,10 @@
         </div>
         </div>
     </selection>
+    <script src="java.js" ></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous" ></script>
 </body>
 
 

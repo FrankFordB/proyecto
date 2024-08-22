@@ -1,8 +1,51 @@
-
+const menuOcultoP = document.getElementById ('menu_p');
+const menuIHPP = document.getElementById ('menuIHPP');
 const botonAbrirModal = document.querySelector("#boton-abrir-modal");
 const botonCerrarModal = document.querySelector("#boton-cerrar-modal");
 const botonCerrarModal1 = document.querySelector("#boton-cerrar-modal1");
 const modal= document.querySelector("#modal");
+
+
+function handleNavBehavior() {
+  const menuOcultoP = document.getElementById ('menu_p');
+  const mediaQuery = window.matchMedia('(max-width: 1050px)');
+
+  if (mediaQuery.matches) {
+    // Comportamiento para pantallas pequeñas
+    menuOcultoP.innerHTML = 'Menú en vista móvil';
+    menuOcultoP.addEventListener('click', () => {
+      alert('Menú móvil clickeado');
+    });
+  } else {
+    // Comportamiento para pantallas grandes
+    menuOcultoP.innerHTML = 'Menú en vista normal';
+    menuOcultoP.removeEventListener('click', () => {
+      alert('Menú móvil clickeado');
+    });
+  }
+}
+
+// STYLOS INICIALES
+menuOcultoP.style.display = '';
+menuIHPP.style.display = 'none';
+
+// ABRIR MENU MEDIA QUERY
+
+function btnMenu () {
+  if (menuOcultoP.style.display === ''){
+    menuOcultoP.style.display = 'none';
+    menuIHPP.style.display = '';
+  }  else {
+    menuOcultoP.style.display = '';
+    menuIHPP.style.display = 'none'
+  }
+  
+}
+
+
+
+
+// MODALES
 
 botonAbrirModal.addEventListener("click",()=>{
     modal.showModal();
