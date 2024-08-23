@@ -33,7 +33,7 @@ const redesSlider = document.querySelector('.hidden-text');
 // STYLOS INICIALES
 menuOcultoP.style.display = '';
 menuIHPP.style.display = 'none';
-colorBtnInicio.style.textShadow = '3px -2px 8px rgba(233, 105, 0)';
+colorBtnInicio.style.textShadow = ' 1px -3px 8px rgb(15, 15, 15, .8)';
 redesOcultar.style.display = 'none';
 
 // STYLOS INICIALES PAGINAS
@@ -64,7 +64,7 @@ function btnInicio() {
   paginaCuatro.style.display= 'none';
 
   colorBtnChedar.style.textShadow = '';
-  colorBtnInicio.style.textShadow = '3px -2px 8px rgba(233, 105, 0)';
+  colorBtnInicio.style.textShadow = ' 1px -3px 8px rgb(15, 15, 15, .8)';
   colorBtnHaceTuPedido.style.textShadow = '';
   colorBtnHamburguesa.style.textShadow = '';
   colorBtnPapas.style.textShadow = '';
@@ -78,7 +78,7 @@ function btnHacetupedido() {
 
   colorBtnChedar.style.textShadow = '';
   colorBtnInicio.style.textShadow = '';
-  colorBtnHaceTuPedido.style.textShadow = '3px -2px 8px rgba(233, 105, 0)';
+  colorBtnHaceTuPedido.style.textShadow = ' 1px -3px 8px rgb(15, 15, 15, .8)';
   colorBtnHamburguesa.style.textShadow = '';
   colorBtnPapas.style.textShadow = '';
 }
@@ -92,7 +92,7 @@ function btnHamburguesas() {
   colorBtnChedar.style.textShadow = '';
   colorBtnInicio.style.textShadow = '';
   colorBtnHaceTuPedido.style.textShadow = '';
-  colorBtnHamburguesa.style.textShadow = '3px -2px 8px rgba(233, 105, 0)';
+  colorBtnHamburguesa.style.textShadow = ' 1px -3px 8px rgb(15, 15, 15, .8)';
   colorBtnPapas.style.textShadow = '';
 }
 
@@ -103,7 +103,7 @@ function btnPiletaChedar() {
   paginaTres.style.display= '';
   paginaCuatro.style.display= 'none';
 
-  colorBtnChedar.style.textShadow = '3px -2px 8px rgba(233, 105, 0)';
+  colorBtnChedar.style.textShadow = ' 1px -3px 8px rgb(15, 15, 15, .8)';
   colorBtnInicio.style.textShadow = '';
   colorBtnHaceTuPedido.style.textShadow = '';
   colorBtnHamburguesa.style.textShadow = '';
@@ -121,7 +121,7 @@ function btnPapas() {
   colorBtnInicio.style.textShadow = '';
   colorBtnHaceTuPedido.style.textShadow = '';
   colorBtnHamburguesa.style.textShadow = '';
-  colorBtnPapas.style.textShadow = '3px -2px 8px rgba(233, 105, 0)';
+  colorBtnPapas.style.textShadow = ' 1px -3px 8px rgb(15, 15, 15, .8)';
 }
 
 // ABRIR MENU (EN MEDIA QUERY) 

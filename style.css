@@ -379,7 +379,7 @@ body {
 
 .header_selector_links:hover {
     color: var(--color-primario);
-    text-shadow: 2px -2px 18px #db7e14;
+    text-shadow: 1px -3px 8px rgb(15, 15, 15, .8);
 }
 
 
@@ -595,6 +595,10 @@ body {
     }
 }
 
+.contenedor_master_hamburguesas {
+    display: flex;
+    flex-direction: row;
+}
 
 .columna_hamburguesas {
     margin-left: 0.5rem;
@@ -1241,7 +1245,7 @@ body {
     }
     .hidden-text {
         position: relative;
-         left: 20%;
+        left: 20%;
         transition: left 0.8s ease-in-out;
         font-family: var(--fuente-krona);
         color: #cccbcb;
@@ -1406,4 +1410,87 @@ body {
     }
 
 
+}
+/* PAGINA DOS HAMBURGUESAS *//* PAGINA DOS HAMBURGUESAS *//* PAGINA DOS HAMBURGUESAS *//* PAGINA DOS HAMBURGUESAS */
+.contenedor_master_hamburguesas {
+    flex-direction: column;
+    margin-left: -30px;
+    
+}
+.columna_hamburguesas{
+    width: 95%;
+}
+
+.hamburguesas_contenido_hijo{
+    margin-left: 5%;
+    justify-content: center;
+}
+.hamburguesa_contenido_master{
+    width: 90%;
+    min-width: 90%;
+    margin: 0px;
+    justify-content: center;
+}
+.hamburguesa_contenido_submaster {
+    width: 99%;
+    max-width: 100%;
+    margin: 5%;
+    }
+
+.hamburguesas_contenido_texto_papas{
+    width: 15%;
+    font-size: 12px;
+}
+
+.hamburguesas_contenido_texto_parrafo1{
+    font-size: 11px;
+}
+.hamburguesas_contenido_texto_parrafo2{
+    font-size: 14px;
+    width: 70%;
+    justify-content: end;
+    align-self: center;
+}
+
+/* PAGINA 3 CHEDAR/* PAGINA 3 CHEDAR *//* PAGINA 3 CHEDAR *//* PAGINA 3 CHEDAR *//* PAGINA 3 CHEDAR*//* */
+
+.hola {
+    flex-direction: column;
+    align-items: center;
+}
+.chau {
+    display: flex;
+    width: 550px;
+    margin-left: 10%;
+}
+
+.inicio_hamburguesa_h3 {
+    margin-top:-10%;
+    width: 500px;
+}
+.hamburguesa_contenido_master1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hamburguesas_contenido_texto_titulo{
+    font-size: 22px;
+}
+.Cheddar_video_madre{
+    width: 100%;
+    margin-top: -10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+.cheddar_video{
+    display: flex;
+    
+    justify-content: center;
+    
+    width: 400px;
+    max-width: 420px;
+    
 }
