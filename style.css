@@ -1266,6 +1266,7 @@ body {
         align-items: center;
         align-content: center;
         align-self: center;
+        border-radius: 10px;
         gap: 5px;
         padding: 4%;
         margin-right: 3px;
