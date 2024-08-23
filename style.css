@@ -76,7 +76,6 @@ body {
 
 
 .myburgertitulos {
-    background-color: #220909;
     position: absolute;
     flex-direction: 0;
     display: inline-flex;
@@ -157,7 +156,6 @@ body {
 .banner_conteiner_myburger {
     font-family: "Krona One", sans-serif;
     font-size: 28px;
-
     text-align: center;
     text-shadow: 11px -4px 5px #000000;
     color: var(--color-negro);
@@ -256,6 +254,10 @@ body {
 /* NAV */
 /* NAV */
 /* NAV */
+.header_selector_menu_desplegable {
+        display: none;}
+.header_selector_links1 {
+        display: none;}
 
 .header_selector_madre {
     display: flex;
@@ -272,7 +274,9 @@ body {
     box-shadow: 4px -2px 30px #cccbcb;
 
 }
-
+.header_selector_madre span {
+    display: none;
+}
 .header_selector_links {
     color: var(--color-negro);
     font-family: var(--fuente-krona);
@@ -1005,6 +1009,7 @@ body {
 
     .header_selector_madre span {
         font-size: 20px;
+        display: flex;
         flex-direction: row;
         cursor: pointer;
         
@@ -1064,9 +1069,7 @@ body {
 
     .banner_conteiner {
         flex-direction: column;
-        background-color: rgb(0, 0, 0);
-        ;
-
+        
     }
 
     .banner_conteiner_foto_myburger {

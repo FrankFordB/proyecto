@@ -5,39 +5,103 @@ const botonCerrarModal = document.querySelector("#boton-cerrar-modal");
 const botonCerrarModal1 = document.querySelector("#boton-cerrar-modal1");
 const modal= document.querySelector("#modal");
 
+// VARIABLES DE PAGINAS 1 2 3 4
 
-function handleNavBehavior() {
-  const menuOcultoP = document.getElementById ('menu_p');
-  const mediaQuery = window.matchMedia('(max-width: 1050px)');
+const paginaUno = document.getElementById ('hamburguesa_pagina1');
+const paginaDos = document.getElementById ('hamburguesa_pagina2');
+const paginaTres = document.getElementById ('hamburguesa_pagina3');
+const paginaCuatro = document.getElementById ('hamburguesa_pagina4');
 
-  if (mediaQuery.matches) {
-    // Comportamiento para pantallas pequeñas
-    menuOcultoP.innerHTML = 'Menú en vista móvil';
-    menuOcultoP.addEventListener('click', () => {
-      alert('Menú móvil clickeado');
-    });
-  } else {
-    // Comportamiento para pantallas grandes
-    menuOcultoP.innerHTML = 'Menú en vista normal';
-    menuOcultoP.removeEventListener('click', () => {
-      alert('Menú móvil clickeado');
-    });
-  }
-}
+
+
+// function handleNavBehavior() {
+//   const menuOcultoP = document.getElementById ('menu_p');
+//   const mediaQuery = window.matchMedia('(max-width: 1050px)');
+
+//   if (mediaQuery.matches) {
+//     // Comportamiento para pantallas pequeñas
+//     menuOcultoP.innerHTML = 'Menú en vista móvil';
+//     menuOcultoP.addEventListener('click', () => {
+//       if (menuOcultoP.style.display === ''){
+//     menuOcultoP.style.display = 'none';
+//     menuIHPP.style.display = '';
+//   }  else {
+//     menuOcultoP.style.display = '';
+//     menuIHPP.style.display = 'none'
+//   }
+//       alert('Menú móvil clickeado');
+//     });
+//   } else {
+//     // Comportamiento para pantallas grandes
+//     menuOcultoP.innerHTML = 'Menú en vista normal';
+//     menuOcultoP.removeEventListener('click', () => {
+//       alert('Menú móvil clickeado');
+//     });
+//   }
+// }
 
 // STYLOS INICIALES
-menuOcultoP.style.display = '';
-menuIHPP.style.display = 'none';
+menuOcultoP.style.display = 'none';
+menuIHPP.style.display = '';
 
-// ABRIR MENU MEDIA QUERY
+// STYLOS INICIALES PAGINAS
+paginaUno.style.display= '';
+paginaDos.style.display= 'none';
+paginaTres.style.display= 'none';
+paginaCuatro.style.display= 'none';
+
+// CAMBIO DE PAGINAS
+function btnInicio() {
+  paginaUno.style.display= '';
+  paginaDos.style.display= 'none';
+  paginaTres.style.display= 'none';
+  paginaCuatro.style.display= 'none';
+}
+
+function btnHacetupedido() {
+  paginaUno.style.display= 'none';
+  paginaDos.style.display= 'none';
+  paginaTres.style.display= 'none';
+  paginaCuatro.style.display= 'none';
+}
+
+function btnHamburguesas() {
+  paginaUno.style.display= 'none';
+  paginaDos.style.display= '';
+  paginaTres.style.display= 'none';
+  paginaCuatro.style.display= 'none';
+}
+
+function btnPiletaChedar() {
+  paginaUno.style.display= 'none';
+  paginaDos.style.display= '';
+  paginaTres.style.display= 'none';
+  paginaCuatro.style.display= 'none';
+}
+
+function btnPiletaChedar() {
+  paginaUno.style.display= 'none';
+  paginaDos.style.display= 'none';
+  paginaTres.style.display= '';
+  paginaCuatro.style.display= 'none';
+}
+
+function btnPapas() {
+  paginaUno.style.display= 'none';
+  paginaDos.style.display= 'none';
+  paginaTres.style.display= 'none';
+paginaCuatro.style.display= '';
+}
+
+// ABRIR MENU (EN MEDIA QUERY) 
 
 function btnMenu () {
-  if (menuOcultoP.style.display === ''){
-    menuOcultoP.style.display = 'none';
-    menuIHPP.style.display = '';
-  }  else {
+  if (menuOcultoP.style.display === 'none'){
     menuOcultoP.style.display = '';
-    menuIHPP.style.display = 'none'
+    menuIHPP.style.display = 'none';
+  }  else {
+    menuOcultoP.style.display = 'none';
+    menuIHPP.style.display = ''
   }
   
 }

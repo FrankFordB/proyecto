@@ -14,10 +14,10 @@
 </head>
 
 <body>
-    <div  id="carouselExampleCaptions"  data-bs-ride="carousel" class="carousel slide" >
+    <div id="carouselExampleCaptions" data-bs-ride="carousel" class="carousel slide">
         <div class="carousel-indicators ">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1" ></button>
+                aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
                 aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
@@ -25,21 +25,24 @@
         </div>
         <div class="carousel-inner ">
             <div class="carousel-item active" data-bs-ride="carousel">
-                <img src="Imagenes\bannernuevo2.jpg" data-bs-ride="carousel" class="d-block w-100 data-bs-ride=  mediaquerycarrusel" carousel"" alt="...">
+                <img src="Imagenes\bannernuevo2.jpg" data-bs-ride="carousel"
+                    class="d-block w-100 data-bs-ride=  mediaquerycarrusel" carousel"" alt="...">
                 <div class="carousel-caption d-none d-md-block bodercolor">
                     <h5>Las mejores Burger</h5>
                     <p>No te quedes con las ganas.</p>
                 </div>
             </div>
             <div class="carousel-item" data-bs-ride="carousel">
-                <img src="Imagenes\bannernuevo1.jpg" data-bs-ride="carousel" class="d-block w-100 data-bs-ride=  mediaquerycarrusel" carousel"" alt="...">
+                <img src="Imagenes\bannernuevo1.jpg" data-bs-ride="carousel"
+                    class="d-block w-100 data-bs-ride=  mediaquerycarrusel" carousel"" alt="...">
                 <div class="carousel-caption d-none d-md-block bodercolor">
                     <h5>Nuestro servicios</h5>
                     <p>Delivery a todo el pais.</p>
                 </div>
             </div>
-            <div class="carousel-item "data-bs-ride="carousel">
-                <img src="Imagenes\bannernuevo3.jpg" data-bs-ride="carousel" class="d-block w-100 data-bs-ride=  mediaquerycarrusel" carousel"" alt="...">
+            <div class="carousel-item " data-bs-ride="carousel">
+                <img src="Imagenes\bannernuevo3.jpg" data-bs-ride="carousel"
+                    class="d-block w-100 data-bs-ride=  mediaquerycarrusel" carousel"" alt="...">
                 <div class="carousel-caption d-none d-md-block bodercolor">
                     <h5>Las mejores carnes</h5>
                     <p>Dejanos a nosotros que te brindamos el mejor servicio.</p>
@@ -104,26 +107,45 @@
 
                     </main>
                     <!-- NAV--><!-- NAV--><!-- NAV--><!-- NAV--><!-- NAV-->
-                    <div id="menu_p"> 
-                    <input type="checkbox" style="display: none;" onclick="btnMenu()" id="btn_menu">
-                    <label for="btn_menu" style="cursor: pointer; font-size: 36px;" class="header_selector_menu_desplegable"><p></p><h5>Menu</h5> <p> =</p></label>
-                </div>
+                    <div id="menu_p">
+                        <input type="checkbox" style="display: none;" onclick="btnMenu()" id="btn_menu">
+                        <label for="btn_menu" style="cursor: pointer; font-size: 36px;"
+                            class="header_selector_menu_desplegable">
+                            <p></p>
+                            <h5>Menú</h5>
+                            <p> =</p>
+                        </label>
+                    </div>
                     <div class="header_selector_madre" id="menuIHPP">
-                        <label for="btn_menu" class="header_selector_links1"><p></p><p>Inicio</p><span><p>=</p></span></label>
-                        <a class="header_selector_links" href="Papas.html">Hace tu pedido</a>
-                        <a class="header_selector_links" href="Hamburguesas.html">Hamburguesa</a>
-                        <a class="header_selector_links" href="Cheddar.html">Pileta de cheddar</a>
-                        <a class="header_selector_links" href="Papas.html">Papas</a>
+                        <label for="btn_menu" class="header_selector_links1">
+                            <p></p>
+                            <p>Menú</p><span>
+                                <p>=</p>
+                            </span>
+                        </label>
+                        <input type="checkbox" style="display: none;" onclick="btnInicio()" id="btnInicio" >
+                        <label class="header_selector_links" for="btnInicio">Inicio</label>
+                        <input type="checkbox" style="display: none;" onclick="btnHacetupedido()" id="btnHacetupedido" >
+                        <label class="header_selector_links" for="btnHacetupedido">Hace tu pedido</label>
+                        <input type="checkbox" style="display: none;" onclick="btnHamburguesas()" id="btnHamburguesa" >
+                        <label class="header_selector_links" for="btnHamburguesa">Hamburguesa</label>
+                        <input type="checkbox" style="display: none;" onclick="btnPiletaChedar()" id="btnPiletaChedar" >
+                        <label class="header_selector_links" for="btnPiletaChedar">Pileta de cheddar</label>
+                        <input type="checkbox" style="display: none;" onclick="btnPapas()" id="btnPapas" >
+                        <label class="header_selector_links" for="btnPapas">Papas</label>
                         
+
 
                     </div>
             </div>
             </header>
             <!-- SELECTION --><!-- SELECTION --><!-- SELECTION --><!-- SELECTION -->
+            
+        <div id="hamburguesa_pagina1">    
             <div class="selection1">
                 <h2 class="hamburguesa_titulo">¿QUIENES SOMOS?</h2>
 
-                <!-- COMIENZO DE FOTOS -->
+                <!-- PAGINA 1 QUIENES SOMOS? -->
                 <div class="inicio_hamburguesa_master">
 
                     <div class="inicio_hamburguesa_inicio">
@@ -239,52 +261,534 @@
                     </div>
                 </div>
             </div>
+        </div>    
+            <!-- FINAL PAGINA 1 --><!-- FINAL PAGINA 1 --><!-- FINAL PAGINA 1 --><!-- FINAL PAGINA 1 --><!-- FINAL PAGINA 1 -->
 
-            <!-- FOOTER COMIENZO -->
-            <footer class="footer_madre">
-                <div>
-                    <img src="Imagenes\fotomyburger.png" class="footer_madre_imagen">
-                </div>
-                <div class="footer_madre_columna1">
-                    <h2 class="footer_madre_columna1_titulo">Nuestras Carnes </h2>
-                    <a class="footer_madre_columna1_vinculos" href="https://www.youtube.com/shorts/YWDltHprssU">Rib
-                        Eye</a>
-                    <a class="footer_madre_columna1_vinculos" href="https://www.youtube.com/shorts/YWDltHprssU">Lomo
-                        alto y Lomo bajo</a>
-                    <a class="footer_madre_columna1_vinculos" href="https://www.youtube.com/shorts/YWDltHprssU">New York
-                        Steak</a>
-                </div>
-                <div class="footer_madre_columna2">
-                    <h2 class="footer_madre_columna1_titulo">¿Donde nos encontramos?</h2>
-                    <a href="https://www.google.com/maps/place/37%C2%B023'56.8%22S+68%C2%B055'22.1%22W/@-37.3989748,-68.9225452,19.4z/data=!4m4!3m3!8m2!3d-37.3991026!4d-68.9228061?entry=ttu"
-                        target="_blank" id="RDLS" class="footer_madre_columna1_vinculos"> <img
-                            class="footer_madre_icono_ubicacion" src="Imagenes\Carnes\ubicacion3.png" />
-                        Mendoza 1278 <br> <br> Rincon de los sauces, Neuquen(8319)</a>
-                </div>
+            <!-- PAGINA 2 HAMBURGUESAS --><!-- PAGINA 2 HAMBURGUESAS --><!-- PAGINA 2 HAMBURGUESAS --><!-- PAGINA 2 HAMBURGUESAS -->
+    <div id="hamburguesa_pagina2">
+            <div class="selection1">
+                <!-- HAMBURGUESAS COMIENZOA -->
+                <H2 class="hamburguesa_titulo"> NUESTRAS HAMBURGUESAS</H2>
+                <div class="hamburguesa_contenido_master">
 
-                <div class="footer_madre_columna3">
-                    <a class="footer_madre_columna3_redes_sociales" target="_blank"
-                        href="https://www.instagram.com/my_burger_12/"><i class="fa-brands fa-instagram"></i></i></a>
-                    <a class="footer_madre_columna3_redes_sociales" target="_blank"
-                        href="https://api.whatsapp.com/send?phone=542993277741&text=%F0%9F%91%8B%20Hola%2C%20vengo%20de%20https%3A%2F%2Fmy-burger-3.ola.click%2Fproducts%20%0ADeseo%20realizar%20el%20siguiente%20pedido%3A%0A">
-                        <i class="fa-brands fa-whatsapp"></i></a>
-                    <a class="footer_madre_columna3_redes_sociales1" href=""><i class="fa-solid fa-phone"></i></a>
-                </div>
-                <div class="footer_madre_columna3_master">
-                    </class=>
-                    <a target="_blank" href="https://www.linkedin.com/in/franco-burgoa-4a338514b/"
-                        class="footer_madre_Desarrolador">Desarrollado por Franco Burgoa</a>
+                    <!-- DIVISION DE 3 HAMBURGUESASDIVISION DE 3 HAMBURGUESAS    -->
+                    <div class="columna_hamburguesas">
 
-            </footer>
+                        <div class="links" href="https://www.youtube.com/watch?v=35XFAkwmU4c" id="boton_abrir_modal">
+
+                            <!-- MODAL --><!-- MODAL --><!-- MODAL --><!-- MODAL --><!-- MODAL -->
+
+                            <button id="boton-abrir-modal" style="display: none;">
+                                Hola</button>
+
+                            <dialog class="modales" id="modal">
+                                <div class="modal_caja">
+                                    <div class="modal_caja1">
+
+
+                                        <input type="radio" class="boton_cerrar_modal" id="boton-cerrar-modal1"></input>
+                                        <label class="X_modal" for="boton-cerrar-modal1">X</label>
+
+                                        <div class="modal_caja_de_foto"><img class="modal_foto"
+                                                src="Imagenes\Afrodita.png" /> </div>
+
+                                    </div>
+                                    <div class="modal_caja2">
+                                        <div class="modal_titulos">
+                                            <h2>Bacon</h2>
+                                        </div>
+                                        <div class="modal_parrafos">
+                                            <p>Hamburguesa con
+                                                bacon, doble cheddar, doble medallon de 110g. </p>
+                                        </div>
+                                        <div class="modal_precio">
+                                            <p class="modal_precio_texto">$8500</p>
+                                            <p class="modal_precio_texto">Papas incluidas✅</p>
+                                        </div>
+
+
+
+                                        <div class="modal_agregados">
+                                            <div class="modal_agregados_cajita">
+                                                <p style="font-weight: 600;">Elige tu salsa</p>
+                                                <br><select class="modal_selector">
+                                                    <option value="value0" selected>Sin salsa extra</option>
+                                                    <option value="value1">Salsa Thousand island (tributo a Mcdonald's,
+                                                        base de mayonesa, ketchup, mostaza) $700</option>
+                                                    <option value="value2" selected>BBQ (salsa base de tomate levemente
+                                                        ahumada) $700</option>
+                                                    <option value="value3">Salsa Thousand island (tributo a Mcdonald's,
+                                                        base de mayonesa, ketchup, mostaza) $700</option>
+                                                    <option value="value4">salsa picante leve (base de ketchup) suave
+                                                        $700</option>
+                                                    <option value="value5">salsa picante moderado (base de ketchup) $700
+                                                    </option>
+                                                    <option value="value6">salsa picante fuerte (base habanero) $800
+                                                    </option>
+                                                </select>
+                                                <p style="margin-top: 1rem ;">Cantidad</p>
+                                                <label for="price"></label>
+                                                <input
+                                                    style="text-align: center; align-self: center;width: 2rem;height: 1.8rem;"
+                                                    type="number" id="modal_cantidad_salsa" value="0">
+                                                <button class="modal_botonesmas" id="modal_botonesmas1"
+                                                    onclick="restar()">-</button>
+
+                                                <button class="modal_botonesmas" onclick="sumar()">+</button>
+                                                <p
+                                                    style="font-weight: 600;margin-top: 1rem; padding-bottom: 0.5rem; border-bottom: 0.01rem solid #00000048; ">
+                                                </p>
+                                                <br>
+                                                <p style="font-weight: 600;">Elige tu salsa</p>
+                                                <br><select class="modal_selector">
+                                                    <option value="value0" selected>Sin salsa extra</option>
+                                                    <option value="value1">Salsa Thousand island (tributo a Mcdonald's,
+                                                        base de mayonesa, ketchup, mostaza) $700</option>
+                                                    <option value="value2">BBQ (salsa base de tomate levemente ahumada)
+                                                        $700</option>
+                                                    <option value="value3">Salsa Thousand island (tributo a Mcdonald's,
+                                                        base de mayonesa, ketchup, mostaza) $700</option>
+                                                    <option value="value4">salsa picante leve (base de ketchup) suave
+                                                        $700</option>
+                                                    <option value="value5">salsa picante moderado (base de ketchup) $700
+                                                    </option>
+                                                    <option value="value6">salsa picante fuerte (base habanero) $800
+                                                    </option>
+                                                </select>
+                                                <p style="margin-top: 1rem ;">Cantidad</p>
+                                                <label for="price"></label>
+                                                <input style="text-align: center; margin-top: 0.5rem; width: 2rem;"
+                                                    type="number" id="modal_cantidad_salsa1" value="0">
+                                                <button class="modal_botonesmas" onclick="restar1()">-</button>
+                                                <button class="modal_botonesmas" onclick="sumar1()">+</button>
+                                                <p
+                                                    style="font-weight: 600;margin-top: 1rem; padding-bottom: 0.5rem; border-bottom: 0.01rem solid #00000048; ">
+                                                </p>
+                                                <br>
+
+                                                <p style="font-weight: 600;">Elige tu salsa</p>
+                                                <br><select class="modal_selector">
+                                                    <option value="value0" selected>Sin salsa extra</option>
+                                                    <option value="value1">Salsa Thousand island (tributo a Mcdonald's,
+                                                        base de mayonesa, ketchup, mostaza) $700</option>
+                                                    <option value="value2" selected>BBQ (salsa base de tomate levemente
+                                                        ahumada) $700</option>
+                                                    <option value="value3">Salsa Thousand island (tributo a Mcdonald's,
+                                                        base de mayonesa, ketchup, mostaza) $700</option>
+                                                    <option value="value4">salsa picante leve (base de ketchup) suave
+                                                        $700</option>
+                                                    <option value="value5">salsa picante moderado (base de ketchup) $700
+                                                    </option>
+                                                    <option value="value6">salsa picante fuerte (base habanero) $800
+                                                    </option>
+                                                </select>
+                                                <p style="margin-top: 1rem ;">Cantidad</p>
+                                                <label for="price"></label>
+                                                <input type="number" id="price"
+                                                    style="text-align: center; margin-top: 0.5rem;width: 2rem;">
+                                                <p
+                                                    style="font-weight: 600;margin-top: 1rem; padding-bottom: 0.5rem; border-bottom: 0.01rem solid #00000048; ">
+                                                </p>
+                                                <br>
+
+                                                <br><select class="modal_selector">
+                                                    <option value="value0" selected>Sin salsa extra</option>
+                                                    <option value="value1">Salsa Thousand island (tributo a Mcdonald's,
+                                                        base de mayonesa, ketchup, mostaza) $700</option>
+                                                    <option value="value2" selected>BBQ (salsa base de tomate levemente
+                                                        ahumada) $700</option>
+                                                    <option value="value3">Salsa Thousand island (tributo a Mcdonald's,
+                                                        base de mayonesa, ketchup, mostaza) $700</option>
+                                                    <option value="value4">salsa picante leve (base de ketchup) suave
+                                                        $700</option>
+                                                    <option value="value5">salsa picante moderado (base de ketchup) $700
+                                                    </option>
+                                                    <option value="value6">salsa picante fuerte (base habanero) $800
+                                                    </option>
+                                                </select>
+                                                <p style="margin-top: 1rem ;">Cantidad</p>
+                                                <label for="price"></label>
+                                                <input style="text-align: center; margin-top: 0.5rem;width: 2rem;"
+                                                    type="number" id="price">
+                                                <p
+                                                    style="font-weight: 600;margin-top: 1rem; padding-bottom: 0.5rem; border-bottom: 0.01rem solid #00000048; ">
+                                                </p>
+                                                <br>
+
+                                                <label for="price">Salsa Thousand island (tributo a Mcdonald's, base de
+                                                    mayonesa, ketchup, mostaza)</label>
+                                                <input type="number" id="price">
+                                                <p>$700</p>
+                                                <br>
+                                                <label for="price">salsa picante leve (base de ketchup) suave</label>
+                                                <input type="number" id="price">
+                                                <p>$700</p>
+                                                <br>
+                                                <label for="price">salsa picante moderado (base de ketchup)</label>
+                                                <input type="number" id="price">
+                                                <p>$700</p>
+                                                <br>
+                                                <label for="price">salsa picante fuerte (base habanero)</label>
+                                                <input type="number" id="price">
+                                                <p>$800</p>
+                                                <input type="submit"></select>
+                                            </div>
+                                            <div>
+
+                                            </div>
+                                        </div>
+
+                                        <button id="boton-cerrar-modal">Cerrar eseses modal</button>
+                                    </div>
+                                </div>
+                            </dialog>
+
+
+
+                            <label for="boton-abrir-modal">
+                                <div class="hamburguesa_contenido_submaster">
+
+                                    <div class="hamburguesa_contenido_imagen">
+                                        <img class="hamburguesa_contenido_imagen1"
+                                            src="./Imagenes\HaburguesaBacon11.jpg" alt="HamburguesaBacon"
+                                            id="linkbacon" />
+                                    </div>
+                                    <div id="linkbacon" class="hamburguesas_contenido_hijo">
+                                        <h2 id="linkbacon" class="hamburguesas_contenido_texto_titulo"> Bacon</h2>
+                                        <p id="linkbacon" class="hamburguesas_contenido_texto_parrafo1"> Hamburguesa con
+                                            bacon, doble cheddar, doble medallon de 110g.</p>
+                                        <p class="hamburguesas_contenido_texto_parrafo2"> $ 8.500,00</p>
+                                    </div>
+                                    <div id="linkbacon2" class="hamburguesas_contenido_texto_papas">
+                                        <p id="linkbacon2">Papas incluidas✅</p>
+                                    </div>
+
+                                </div>
+                        </div>
+                        </label>
+
+                        <!-- MODAL   --><!-- MODAL   --><!-- MODAL   --><!-- MODAL   --><!-- MODAL   --><!-- MODAL   -->
+
+
+                        <!-- ACA EMPIEZA LA CHESSE -->
+                        <a class="links" href="https://www.youtube.com/watch?v=35XFAkwmU4c" id="linkbacon">
+                            <div class="hamburguesa_contenido_submaster">
+                                <div class="hamburguesa_contenido_imagen">
+                                    <img class="hamburguesa_contenido_imagen1" src="Imagenes\Hamburguesa222.jpg"
+                                        alt="HamburguesaBacon" id="linkbacon" />
+                                </div>
+                                <div id="linkbacon" class="hamburguesas_contenido_hijo">
+                                    <h2 id="linkbacon" class="hamburguesas_contenido_texto_titulo"> Afrodita</h2>
+                                    <p id="linkbacon" class="hamburguesas_contenido_texto_parrafo1"> Hamburguesa con
+                                        cebolla caramelizada, y salsa de mostaza, doble cheddar, doble medallon de 110g.
+                                    </p>
+                                    <p class="hamburguesas_contenido_texto_parrafo2"> $ 8.500,00</p>
+                                </div>
+                                <div class="hamburguesas_contenido_texto_papas">
+                                    <p id="linkbacon">Papas incluidas✅</p>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- ACA EMPIEZA LA AFRODITA -->
+                        <a class="links" href="https://www.youtube.com/watch?v=35XFAkwmU4c" id="linkbacon">
+                            <div class="hamburguesa_contenido_submaster">
+                                <div class="hamburguesa_contenido_imagen">
+                                    <img class="hamburguesa_contenido_imagen1" src="Imagenes\Hamburguesa333.jpg"
+                                        alt="HamburguesaBacon" id="linkbacon" />
+                                </div>
+                                <div id="linkbacon" class="hamburguesas_contenido_hijo">
+                                    <h2 id="linkbacon" class="hamburguesas_contenido_texto_titulo"> Americana</h2>
+                                    <p id="linkbacon" class="hamburguesas_contenido_texto_parrafo1"> Hamburguesa con
+                                        Lechuga, Tomate, Doble cheddar, Doble medallon de carne de 110g.</p>
+                                    <p class="hamburguesas_contenido_texto_parrafo2"> $ 8.500,00</p>
+                                </div>
+                                <div class="hamburguesas_contenido_texto_papas">
+                                    <p id="linkbacon">Papas incluidas✅</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- DIVISION DE 3 HAMBURGUESASDIVISION DE 3 HAMBURGUESASDIVISION DE 3 HAMBURGUESAS -->
+                    <div class="columna_hamburguesas">
+                        <!-- ACA EMPIEZA LA CHEESS SIMPLE -->
+                        <a class="links" href="https://www.youtube.com/watch?v=35XFAkwmU4c" id="linkbacon">
+                            <div class="hamburguesa_contenido_submaster">
+                                <div class="hamburguesa_contenido_imagen">
+                                    <img class="hamburguesa_contenido_imagen1" src="Imagenes\Hamburguesa444.jpg"
+                                        alt="HamburguesaBacon" id="linkbacon" />
+                                </div>
+                                <div id="linkbacon" class="hamburguesas_contenido_hijo">
+                                    <h2 id="linkbacon" class="hamburguesas_contenido_texto_titulo"> Chesse burger</h2>
+                                    <p id="linkbacon" class="hamburguesas_contenido_texto_parrafo1"> Hamburguesa con
+                                        Cuadruple Cheddar, Doble medallon de 110g.</p>
+                                    <p class="hamburguesas_contenido_texto_parrafo2"> $ 8.500,00</p>
+                                </div>
+                                <div class="hamburguesas_contenido_texto_papas">
+                                    <p id="linkbacon">Papas incluidas✅</p>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- ACA EMPIEZA LA AMERICANA -->
+                        <a class="links" href="https://www.youtube.com/watch?v=35XFAkwmU4c" id="linkbacon">
+                            <div class="hamburguesa_contenido_submaster">
+                                <div class="hamburguesa_contenido_imagen">
+                                    <img class="hamburguesa_contenido_imagen1" src="Imagenes\Hamburguesa555.jpg"
+                                        alt="HamburguesaBacon" id="linkbacon" />
+                                </div>
+                                <div id="linkbacon" class="hamburguesas_contenido_hijo">
+                                    <h2 id="linkbacon" class="hamburguesas_contenido_texto_titulo"> La sangre fría</h2>
+                                    <p id="linkbacon" class="hamburguesas_contenido_texto_parrafo1"> Hamburguesa con
+                                        Triple Cheddar, Un Medallon de 110g y un cuchillo.</p>
+                                    <p class="hamburguesas_contenido_texto_parrafo2"> $ 8.500,00</p>
+                                </div>
+                                <div class="hamburguesas_contenido_texto_papas">
+                                    <p id="linkbacon">Papas incluidas✅</p>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- ACA EMPIEZA LA BLUECHESS -->
+                        <a class="links" href="https://www.youtube.com/watch?v=35XFAkwmU4c" id="linkbacon">
+                            <div class="hamburguesa_contenido_submaster">
+                                <div class="hamburguesa_contenido_imagen">
+                                    <img class="hamburguesa_contenido_imagen1" src="Imagenes\Hamburguesa666.jpg"
+                                        alt="HamburguesaBacon" id="linkbacon" />
+                                </div>
+                                <div id="linkbacon" class="hamburguesas_contenido_hijo">
+                                    <h2 id="linkbacon" class="hamburguesas_contenido_texto_titulo"> Chesse burger simple
+                                    </h2>
+                                    <p id="linkbacon" class="hamburguesas_contenido_texto_parrafo1"> Hamburguesa con
+                                        Triple Cheddar, Un Medallon de 110g.</p>
+                                    <p class="hamburguesas_contenido_texto_parrafo2"> $ 8.500,00</p>
+                                </div>
+                                <div class="hamburguesas_contenido_texto_papas">
+                                    <p id="linkbacon">Papas incluidas✅</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- FINAL PAGINA 2 --><!-- FINAL PAGINA 2 --><!-- FINAL PAGINA 2 --><!-- FINAL PAGINA 2 --><!-- FINAL PAGINA 2 -->
+
+        <!-- INICIO PAGINA 3 --><!-- INICIO PAGINA 3 --><!-- INICIO PAGINA 3 --><!-- INICIO PAGINA 3 --><!-- INICIO PAGINA 3 -->
+    <div id="hamburguesa_pagina3">    
+        <div class="selection1">
+            <!-- COMIENZO DE FOTOS -->
+            <H2 class="hamburguesa_titulo"> CHEDDAR.. NUESTRAS ESPECIALIDAD</H2>
+            <div class="hamburguesa_contenido_master1">
+                <div class="hola">
+                <div class="chau">
+                    <div class="cheddar_conteiner_precios">
+                    <a class="links" href="https://www.youtube.com/watch?v=35XFAkwmU4c" id="linkbacon">
+                        <div class="hamburguesa_contenido_submaster">
+        
+                            <div class="hamburguesa_contenido_imagen">
+        
+                                <!-- CHEDDAR 1 -->
+        
+                                
+                                <img class="hamburguesa_contenido_imagen1"
+                                    src="./Imagenes/Hamburguesas inicio/hamburguesa con chedda.jpg" alt="HamburguesaBacon"
+                                    id="linkbacon" />
+                            
+                            </div>
+                            <div id="linkbacon" class="hamburguesas_contenido_hijo">
+                                <h2 id="linkbacon" class="hamburguesas_contenido_texto_titulo"> Cheddar para Novatos</h2>
+                                <p id="linkbacon" class="hamburguesas_contenido_texto_parrafo1"> Vas a disfrutar 60g de cheddar extra en tu hamburguesa.</p>
+                                <p class="hamburguesas_contenido_texto_parrafo2"> $ 1.500,00</p>
+                            </div>
+                            <div class="hamburguesas_contenido_texto_papas">
+        </div>
+                            </div>
+                        
+                    </a>
+        
+                    <!-- CHEDAR 2-->
+                    <a class="links" href="https://www.youtube.com/watch?v=35XFAkwmU4c" id="linkbacon">
+                        <div class="hamburguesa_contenido_submaster">
+                            <div class="hamburguesa_contenido_imagen">
+                                <img class="hamburguesa_contenido_imagen1" src="./Imagenes/Hamburguesas inicio/Cheddar3.jpg"
+                                    alt="HamburguesaBacon" id="linkbacon" />
+                            </div>
+                            <div id="linkbacon" class="hamburguesas_contenido_hijo">
+                                <h2 id="linkbacon" class="hamburguesas_contenido_texto_titulo"> Cheddar a Gusto</h2>
+                                <p id="linkbacon" class="hamburguesas_contenido_texto_parrafo1"> Vas a disfrutar 90g de cheddar extra en tu hamburguesa.</p>
+                                <p class="hamburguesas_contenido_texto_parrafo2"> $ 2.500,00</p>
+                            </div>
+                            <div class="hamburguesas_contenido_texto_papas">
+        
+                            </div>
+                        </div>
+                    </a>
+                    <!-- ACA EMPIEZA LA AFRODITA -->
+                    <a class="links" href="https://www.youtube.com/watch?v=35XFAkwmU4c" id="linkbacon">
+                        <div class="hamburguesa_contenido_submaster">
+                            <div class="hamburguesa_contenido_imagen">
+                                <img class="hamburguesa_contenido_imagen1" src="./Imagenes/Hamburguesas inicio/Cheddar2.jpg"
+                                    alt="HamburguesaBacon" id="linkbacon" />
+                            </div>
+                            <div id="linkbacon" class="hamburguesas_contenido_hijo">
+                                <h2 id="linkbacon" class="hamburguesas_contenido_texto_titulo"> Pileta de Cheddar</h2>
+                                <p id="linkbacon" class="hamburguesas_contenido_texto_parrafo1"> Vas a disfrutar 120g de cheddar extra en tu hamburguesa.</p>
+                                <p class="hamburguesas_contenido_texto_parrafo2"> $ 3.500,00</p>
+                            </div>
+                            <div class="hamburguesas_contenido_texto_papas">
+        
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+                <!-- aca -->
+                <div class="inicio_hamburguesa_h3">
+                    <h2 style="margin-top:8rem ;">¿Te vas a quedar con las ganas? <br> <br><p style="font-size: 100px; text-align: center; color: aliceblue;">⇩</h2> 
+                    
+                <br>
+                </div>
+                
+            </div>
+        <div class="Cheddar_video_madre">
+            <div>
+                
+                <h2 class="Cheddar_video_madre_titulo"> Luis ¿Esta que explota, no?</h2>
+            </div>
+            <div>
+                <iframe class="cheddar_video" width="560" height="315" src="https://www.youtube.com/embed/CCHg8WF3uo0?si=tdFmg7NRrF4I_ExM"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        </div>
+        
+        
+            </div>
+        
+    </div>
+
+        <!-- FINAL PAGINA 3 --><!-- FINAL PAGINA 3 --><!-- FINAL PAGINA 3 --><!-- FINAL PAGINA 3 --><!-- FINAL PAGINA 3 -->
+
+        <!-- PAGINA 4 --><!-- PAGINA 4 --><!-- PAGINA 4 --><!-- PAGINA 4 --><!-- PAGINA 4 --><!-- PAGINA 4 --><!-- PAGINA 4 -->
+    
+    <div id="hamburguesa_pagina4">    
+        <div class="selection1">
+
+    <!-- CHEDDAR COMIENZO -->
+            
+            <H2 class="hamburguesa_titulo"> CHEDDAR.. NUESTRAS ESPECIALIDAD</H2>
+        <div class="hamburguesa_contenido_master">  
+        <div>
+            <a class="links" href="https://www.youtube.com/watch?v=wwyA0shMIFQ" id="linkbacon">
+            <div class="hamburguesa_contenido_submaster"> 
+                
+                <div class="hamburguesa_contenido_imagen">
+        
+                    <!-- CHEDDAR 1 -->
+        
+                    <img class="hamburguesa_contenido_imagen1" src="./Imagenes/Hamburguesas inicio/hamburguesa con chedda.jpg" alt="HamburguesaBacon"
+                            id="linkbacon" />
+                    </div>
+                    <div id="linkbacon" class="hamburguesas_contenido_hijo">
+                            <h2 id="linkbacon" class="hamburguesas_contenido_texto_titulo"> Cheddar para Novatos</h2>
+                            <p id="linkbacon" class="hamburguesas_contenido_texto_parrafo1"> Hamburguesa con bacon, doble cheddar, doble medallon de 110g.</p>
+                            <p class="hamburguesas_contenido_texto_parrafo2"> $ 1.500,00</p>
+                        </div>
+                        <div class="hamburguesas_contenido_texto_papas">    
+                            <p id="linkbacon" >Papas incluidas✅</p>
+                        </div>
+            </div>
+        </a>
+                
+            <!-- CHEDAR 2-->
+                <a class="links" href="https://www.youtube.com/watch?v=wwyA0shMIFQ" id="linkbacon">
+                <div class="hamburguesa_contenido_submaster"> 
+                    <div class="hamburguesa_contenido_imagen">
+                            <img class="hamburguesa_contenido_imagen1" src="./Imagenes/Hamburguesas inicio/Cheddar3.jpg" alt="HamburguesaBacon"
+                                id="linkbacon" />
+                        </div>
+                        <div id="linkbacon" class="hamburguesas_contenido_hijo">
+                                <h2 id="linkbacon" class="hamburguesas_contenido_texto_titulo"> Cheddar a Gusto</h2>
+                                <p id="linkbacon" class="hamburguesas_contenido_texto_parrafo1"> Hamburguesa con bacon, doble cheddar, doble medallon de 110g.</p>
+                                <p class="hamburguesas_contenido_texto_parrafo2"> $ 2.500,00</p>
+                            </div>
+                            <div class="hamburguesas_contenido_texto_papas">    
+                                <p id="linkbacon" >Papas incluidas✅</p>
+                            </div>
+                </div>
+            </a>
+            <!-- ACA EMPIEZA LA AFRODITA -->
+            <a class="links" href="https://www.youtube.com/watch?v=wwyA0shMIFQ" id="linkbacon">
+                <div class="hamburguesa_contenido_submaster"> 
+                    <div class="hamburguesa_contenido_imagen">
+                            <img class="hamburguesa_contenido_imagen1" src="./Imagenes/Hamburguesas inicio/Cheddar2.jpg" alt="HamburguesaBacon"
+                                id="linkbacon" />
+                        </div>
+                        <div id="linkbacon" class="hamburguesas_contenido_hijo">
+                                <h2 id="linkbacon" class="hamburguesas_contenido_texto_titulo"> Pileta de Cheddar</h2>
+                                <p id="linkbacon" class="hamburguesas_contenido_texto_parrafo1"> Hamburguesa con bacon, doble cheddar, doble medallon de 110g.</p>
+                                <p class="hamburguesas_contenido_texto_parrafo2"> $ 3.500,00</p>
+                            </div>
+                            <div class="hamburguesas_contenido_texto_papas">    
+                                <p id="linkbacon" >Papas incluidas✅</p>
+                            </div>
+                </div>
+            </a>
+        </div>
+        </div>
+        </div>
+        </div>
+    </div>
+            <!-- FINAL PAGINA4 --><!-- FINAL PAGINA4 --><!-- FINAL PAGINA4 --><!-- FINAL PAGINA4 --><!-- FINAL PAGINA4 --><!-- FINAL PAGINA4 --><!-- FINAL PAGINA4 --><!-- FINAL PAGINA4 -->
+
+        
+        <!-- FOOTER COMIENZO --><!-- FOOTER COMIENZO --><!-- FOOTER COMIENZO --><!-- FOOTER COMIENZO --><!-- FOOTER COMIENZO -->
+        <footer class="footer_madre">
+            <div>
+                <img src="Imagenes\fotomyburger.png" class="footer_madre_imagen">
+            </div>
+            <div class="footer_madre_columna1">
+                <h2 class="footer_madre_columna1_titulo">Nuestras Carnes </h2>
+                <a class="footer_madre_columna1_vinculos" href="https://www.youtube.com/shorts/YWDltHprssU">Rib
+                    Eye</a>
+                <a class="footer_madre_columna1_vinculos" href="https://www.youtube.com/shorts/YWDltHprssU">Lomo
+                    alto y Lomo bajo</a>
+                <a class="footer_madre_columna1_vinculos" href="https://www.youtube.com/shorts/YWDltHprssU">New York
+                    Steak</a>
+            </div>
+            <div class="footer_madre_columna2">
+                <h2 class="footer_madre_columna1_titulo">¿Donde nos encontramos?</h2>
+                <a href="https://www.google.com/maps/place/37%C2%B023'56.8%22S+68%C2%B055'22.1%22W/@-37.3989748,-68.9225452,19.4z/data=!4m4!3m3!8m2!3d-37.3991026!4d-68.9228061?entry=ttu"
+                    target="_blank" id="RDLS" class="footer_madre_columna1_vinculos"> <img
+                        class="footer_madre_icono_ubicacion" src="Imagenes\Carnes\ubicacion3.png" />
+                    Mendoza 1278 <br> <br> Rincon de los sauces, Neuquen(8319)</a>
+            </div>
+
+            <div class="footer_madre_columna3">
+                <a class="footer_madre_columna3_redes_sociales" target="_blank"
+                    href="https://www.instagram.com/my_burger_12/"><i class="fa-brands fa-instagram"></i></i></a>
+                <a class="footer_madre_columna3_redes_sociales" target="_blank"
+                    href="https://api.whatsapp.com/send?phone=542993277741&text=%F0%9F%91%8B%20Hola%2C%20vengo%20de%20https%3A%2F%2Fmy-burger-3.ola.click%2Fproducts%20%0ADeseo%20realizar%20el%20siguiente%20pedido%3A%0A">
+                    <i class="fa-brands fa-whatsapp"></i></a>
+                <a class="footer_madre_columna3_redes_sociales1" href=""><i class="fa-solid fa-phone"></i></a>
+            </div>
+            <div class="footer_madre_columna3_master">
+                </class=>
+                <a target="_blank" href="https://www.linkedin.com/in/franco-burgoa-4a338514b/"
+                    class="footer_madre_Desarrolador">Desarrollado por Franco Burgoa</a>
+
+        </footer>
 
         </div>
         </div>
         </div>
     </selection>
-    <script src="java.js" ></script>
+    <script src="java.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous" ></script>
+        crossorigin="anonymous"></script>
 </body>
 
 
