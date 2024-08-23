@@ -144,15 +144,18 @@ function btnMenu () {
 
 
 
-// MODALES
+// ABRIR Y CERRAR MODALES 
 
 botonAbrirModal.addEventListener("click",()=>{
     modal.showModal();
 });
 
-window.onclick = function (botonCerrarModal) {
+window.onclick = function (Event) {
   if (Event.target === modal) {
-    modal.style.display ='none';}
+    modal.close();
+  } else{
+
+  }
   }
 
 botonCerrarModal.addEventListener("click",()=>{
@@ -161,9 +164,7 @@ botonCerrarModal.addEventListener("click",()=>{
 botonCerrarModal1.addEventListener("click",()=>{
   modal.close();
 });
-// botonCerrarModal1.addEventListener("click",()=>{
-//     modal.close();
-// });
+
 
 
 
