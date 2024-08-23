@@ -4,7 +4,13 @@ const botonAbrirModal = document.querySelector("#boton-abrir-modal");
 const botonCerrarModal = document.querySelector("#boton-cerrar-modal");
 const botonCerrarModal1 = document.querySelector("#boton-cerrar-modal1");
 const modal= document.querySelector("#modal");
+const menuIHPPCopia = document.getElementById('menuIHPPcopia');
 
+
+// if (menuOcultoP.style.display = 'none' || menuOcultoP.style.display == 'none') {
+//   menuIHPPCopia.style.display = ''; } else if (menuOcultoP.style.display = '' || menuOcultoP.style.display == '' ){
+//     menuIHPPCopia.style.display = 'none';
+//   }
 // VARIABLES DE PAGINAS 1 2 3 4
 
 const paginaUno = document.getElementById ('hamburguesa_pagina1');
@@ -18,41 +24,17 @@ const colorBtnInicio = document.getElementById('colorBtnInicio');
 const colorBtnHaceTuPedido = document.getElementById ('colorBtnPedido');
 const colorBtnHamburguesa = document.getElementById('colorBtnHamburguesas');
 const colorBtnChedar = document.getElementById('chedarPileta');
-const colorBtnPapas = document.getElementById ('colorBtnPapas');
+const colorBtnPapas = document.getElementById("colorBtnPapas");
 
+// VARIABLE REDES SLIDER
 
-// function handleNavBehavior() {
-//   const menuOcultoP = document.getElementById ('menu_p');
-//   const mediaQuery = window.matchMedia('(max-width: 1050px)');
-
-//   if (mediaQuery.matches) {
-//     // Comportamiento para pantallas pequeñas
-//     menuOcultoP.innerHTML = 'Menú en vista móvil';
-//     menuOcultoP.addEventListener('click', () => {
-//       if (menuOcultoP.style.display === ''){
-//     menuOcultoP.style.display = 'none';
-//     menuIHPP.style.display = '';
-//   }  else {
-//     menuOcultoP.style.display = '';
-//     menuIHPP.style.display = 'none'
-//   }
-//       alert('Menú móvil clickeado');
-//     });
-//   } else {
-//     // Comportamiento para pantallas grandes
-//     menuOcultoP.innerHTML = 'Menú en vista normal';
-//     menuOcultoP.removeEventListener('click', () => {
-//       alert('Menú móvil clickeado');
-//     });
-//   }
-// }
-
-
-
+const redesOcultar = document.querySelector('.banner_conteiner_redes_ocultar');
+const redesSlider = document.querySelector('.hidden-text');
 // STYLOS INICIALES
-menuOcultoP.style.display = 'none';
-menuIHPP.style.display = '';
+menuOcultoP.style.display = '';
+menuIHPP.style.display = 'none';
 colorBtnInicio.style.textShadow = '3px -2px 8px rgba(233, 105, 0)';
+redesOcultar.style.display = 'none';
 
 // STYLOS INICIALES PAGINAS
 paginaUno.style.display= '';
@@ -60,6 +42,20 @@ paginaDos.style.display= 'none';
 paginaTres.style.display= 'none';
 paginaCuatro.style.display= 'none';
 
+
+// SLIDER REDES SOCIALES
+function btnSliderRedes() {
+  if (redesOcultar.style.display == 'none'){
+  redesOcultar.style.display = '';
+  redesSlider.innerHTML = 'Redes ▲';
+  text.classList.toggle('visible-text');
+} else {
+  redesOcultar.style.display = 'none';
+  redesSlider.innerHTML = 'Redes ▼';
+  text.classList.toggle('visible-text');
+}}
+const text = document.querySelector('.hidden-text');
+    
 // CAMBIO DE PAGINAS
 function btnInicio() {
   paginaUno.style.display= '';
@@ -168,54 +164,3 @@ botonCerrarModal1.addEventListener("click",()=>{
 
 
 
-const price = document.querySelector("#price");
-const output = document.querySelector(".price-output");
-
-output.textContent = price.value;
-
-price.addEventListener("input", function () {
-output.textContent = price.value;
-});
-
-
-
-output.textContent = modalCantidadSalsa.value;
-modalBotonSuma.addEventListener("click",()=>{
-    (modalCantidadSalsa) + 1 ;
-});
-// SUMA MODALSUMA MODALSUMA MODALSUMA MODALSUMA MODALSUMA MODALSUMA MODALSUMA MODAL
-
-function restar() {
-    let inputCantidad = document.getElementById('modal_cantidad_salsa');
-    let valorActual = parseInt(inputCantidad.value);
-    if (!isNaN(valorActual)) {
-      inputCantidad.value = valorActual - 1;
-    }
-  }
-
-  // Función para sumar 1 al valor del input
-  function sumar() {
-    let inputCantidad = document.getElementById('modal_cantidad_salsa');
-    let valorActual = parseInt(inputCantidad.value);
-    if (!isNaN(valorActual)) {
-      inputCantidad.value = valorActual + 1;
-    }
-  }
-
-
-  function restar1() {
-    let inputCantidad = document.getElementById('modal_cantidad_salsa1');
-    let valorActual = parseInt(inputCantidad.value);
-    if (!isNaN(valorActual)) {
-      inputCantidad.value = valorActual - 1;
-    }
-  }
-
-  // Función para sumar 1 al valor del input
-  function sumar1() {
-    let inputCantidad = document.getElementById('modal_cantidad_salsa1');
-    let valorActual = parseInt(inputCantidad.value);
-    if (!isNaN(valorActual)) {
-      inputCantidad.value = valorActual + 1;
-    }
-  }

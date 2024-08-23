@@ -83,7 +83,10 @@
                                         class="banner_conteiner_vermapa">Ver mapa</a>
                                 </div>
                                 <!-- REDES SOCIALES -->
+                                
                                 <div class="banner_conteiner_redes">
+                                    <div class="hidden-text" style="cursor: pointer;"  onclick="btnSliderRedes()">Redes ▼ </div>
+                                    <div class="banner_conteiner_redes_ocultar">
                                     <div class="banner_conteiner_redes_madre1">
                                         <a class="banner_conteiner_redes_iconos" href="#"><i
                                                 class="fa-solid fa-circle-info"></i></a>
@@ -100,6 +103,7 @@
                                         <a class="banner_conteiner_redes_iconos2" href=""><i style="font-size: 24px;"
                                                 class="fa-solid fa-phone"></i></a>
                                     </div>
+                                </div>
                                 </div>
                             </div>
                     </div>
@@ -130,13 +134,31 @@
                         <label class="header_selector_links" for="btnHacetupedido" id="colorBtnPedido">Hace tu pedido</label>
                         <input type="checkbox" style="display: none;" onclick="btnHamburguesas()" id="btnHamburguesa" >
                         <label class="header_selector_links" for="btnHamburguesa" id="colorBtnHamburguesas">Hamburguesa</label>
-                        <input type="checkbox" style="display: none;" onclick="btnPiletaChedar()" id="btnPiletaChedar" >
-                        <label class="header_selector_links" for="btnPiletaChedar" id="chedarPileta">Pileta de cheddar</label>
-                        <input type="checkbox" style="display: none;" onclick="btnPapas()" id="btnPapas" >
-                        <label class="header_selector_links" for="btnPapas" id="colorBtnPapas">Papas</label>
+                        <input type="checkbox"  style="display:  none;" onclick="btnPiletaChedar()" id="btnPiletaChedar" >
+                        <label class="header_selector_links"  for="btnPiletaChedar" id="chedarPileta">Pileta de cheddar</label>
+                        <input type="checkbox" style="display: none;" name="colorBtnPapas1" onclick="btnPapas()" id="btnPapas" >
+                        <label class="header_selector_links" for="btnPapas" name="colorBtnPapas1" id="colorBtnPapas">Papas</label>
             
         </div>
+        <div class="header_selector_madre_copia" id="menuIHPPcopia">
+            <label for="btn_menu" class="header_selector_links1">
+                <p></p>
+                <p>Menú</p><span>
+                    <p>☰</p>
+                </span>
+            </label>
+            <input type="checkbox" style="display: none;" onclick="btnInicio()" id="btnInici" >
+            <label class="header_selector_links" for="btnInicio" id="colorBtnInicio">Inicio</label>
+            <input type="checkbox" style="display: none;" onclick="btnHacetupedido()" id="btnHacetupedid" >
+            <label class="header_selector_links" for="btnHacetupedido" id="colorBtnPedido">Hace tu pedido</label>
+            <input type="checkbox" style="display: none;" onclick="btnHamburguesas()" id="btnHamburgues" >
+            <label class="header_selector_links" for="btnHamburguesa" id="colorBtnHamburguesas">Hamburguesa</label>
+            <input type="checkbox" style="display: none;" onclick="btnPiletaChedar()" id="btnPiletaCheda" >
+            <label class="header_selector_links" for="btnPiletaChedar" id="chedarPileta">Pileta de cheddar</label>
+            <input type="checkbox" style="display: none;" onclick="btnPapas()" id="btnPapa" >
+            <label class="header_selector_links" for="btnPapas" name="colorBtnPapas1" id="colorBtnPapa">Papas</label>
 
+</div>
             </div>
             </header>
             <!-- SELECTION --><!-- SELECTION --><!-- SELECTION --><!-- SELECTION -->
@@ -384,7 +406,7 @@
                                                 </select>
                                                 <p style="margin-top: 1rem ;">Cantidad</p>
                                                 <label for="price"></label>
-                                                <input type="number" id="price"
+                                                <input type="number" 
                                                     style="text-align: center; margin-top: 0.5rem;width: 2rem;">
                                                 <p
                                                     style="font-weight: 600;margin-top: 1rem; padding-bottom: 0.5rem; border-bottom: 0.01rem solid #00000048; ">
@@ -409,7 +431,7 @@
                                                 <p style="margin-top: 1rem ;">Cantidad</p>
                                                 <label for="price"></label>
                                                 <input style="text-align: center; margin-top: 0.5rem;width: 2rem;"
-                                                    type="number" id="price">
+                                                    type="number" >
                                                 <p
                                                     style="font-weight: 600;margin-top: 1rem; padding-bottom: 0.5rem; border-bottom: 0.01rem solid #00000048; ">
                                                 </p>
@@ -417,19 +439,19 @@
 
                                                 <label for="price">Salsa Thousand island (tributo a Mcdonald's, base de
                                                     mayonesa, ketchup, mostaza)</label>
-                                                <input type="number" id="price">
+                                                <input type="number" >
                                                 <p>$700</p>
                                                 <br>
                                                 <label for="price">salsa picante leve (base de ketchup) suave</label>
-                                                <input type="number" id="price">
+                                                <input type="number" >
                                                 <p>$700</p>
                                                 <br>
                                                 <label for="price">salsa picante moderado (base de ketchup)</label>
-                                                <input type="number" id="price">
+                                                <input type="number" >
                                                 <p>$700</p>
                                                 <br>
                                                 <label for="price">salsa picante fuerte (base habanero)</label>
-                                                <input type="number" id="price">
+                                                <input type="number" >
                                                 <p>$800</p>
                                                 <input type="submit"></select>
                                             </div>
