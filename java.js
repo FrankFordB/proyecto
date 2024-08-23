@@ -12,6 +12,13 @@ const paginaDos = document.getElementById ('hamburguesa_pagina2');
 const paginaTres = document.getElementById ('hamburguesa_pagina3');
 const paginaCuatro = document.getElementById ('hamburguesa_pagina4');
 
+// VARIABLES DE INICIO PEDIDO HAMBURGUESAS 
+
+const colorBtnInicio = document.getElementById('colorBtnInicio');
+const colorBtnHaceTuPedido = document.getElementById ('colorBtnPedido');
+const colorBtnHamburguesa = document.getElementById('colorBtnHamburguesas');
+const colorBtnChedar = document.getElementById('chedarPileta');
+const colorBtnPapas = document.getElementById ('colorBtnPapas');
 
 
 // function handleNavBehavior() {
@@ -40,9 +47,12 @@ const paginaCuatro = document.getElementById ('hamburguesa_pagina4');
 //   }
 // }
 
+
+
 // STYLOS INICIALES
 menuOcultoP.style.display = 'none';
 menuIHPP.style.display = '';
+colorBtnInicio.style.textShadow = '3px -2px 8px rgba(233, 105, 0)';
 
 // STYLOS INICIALES PAGINAS
 paginaUno.style.display= '';
@@ -56,6 +66,12 @@ function btnInicio() {
   paginaDos.style.display= 'none';
   paginaTres.style.display= 'none';
   paginaCuatro.style.display= 'none';
+
+  colorBtnChedar.style.textShadow = '';
+  colorBtnInicio.style.textShadow = '3px -2px 8px rgba(233, 105, 0)';
+  colorBtnHaceTuPedido.style.textShadow = '';
+  colorBtnHamburguesa.style.textShadow = '';
+  colorBtnPapas.style.textShadow = '';
 }
 
 function btnHacetupedido() {
@@ -63,6 +79,12 @@ function btnHacetupedido() {
   paginaDos.style.display= 'none';
   paginaTres.style.display= 'none';
   paginaCuatro.style.display= 'none';
+
+  colorBtnChedar.style.textShadow = '';
+  colorBtnInicio.style.textShadow = '';
+  colorBtnHaceTuPedido.style.textShadow = '3px -2px 8px rgba(233, 105, 0)';
+  colorBtnHamburguesa.style.textShadow = '';
+  colorBtnPapas.style.textShadow = '';
 }
 
 function btnHamburguesas() {
@@ -70,27 +92,40 @@ function btnHamburguesas() {
   paginaDos.style.display= '';
   paginaTres.style.display= 'none';
   paginaCuatro.style.display= 'none';
+  
+  colorBtnChedar.style.textShadow = '';
+  colorBtnInicio.style.textShadow = '';
+  colorBtnHaceTuPedido.style.textShadow = '';
+  colorBtnHamburguesa.style.textShadow = '3px -2px 8px rgba(233, 105, 0)';
+  colorBtnPapas.style.textShadow = '';
 }
 
-function btnPiletaChedar() {
-  paginaUno.style.display= 'none';
-  paginaDos.style.display= '';
-  paginaTres.style.display= 'none';
-  paginaCuatro.style.display= 'none';
-}
 
 function btnPiletaChedar() {
   paginaUno.style.display= 'none';
   paginaDos.style.display= 'none';
   paginaTres.style.display= '';
   paginaCuatro.style.display= 'none';
+
+  colorBtnChedar.style.textShadow = '3px -2px 8px rgba(233, 105, 0)';
+  colorBtnInicio.style.textShadow = '';
+  colorBtnHaceTuPedido.style.textShadow = '';
+  colorBtnHamburguesa.style.textShadow = '';
+  colorBtnPapas.style.textShadow = '';
+
 }
 
 function btnPapas() {
   paginaUno.style.display= 'none';
   paginaDos.style.display= 'none';
   paginaTres.style.display= 'none';
-paginaCuatro.style.display= '';
+  paginaCuatro.style.display= '';
+
+  colorBtnChedar.style.textShadow = '';
+  colorBtnInicio.style.textShadow = '';
+  colorBtnHaceTuPedido.style.textShadow = '';
+  colorBtnHamburguesa.style.textShadow = '';
+  colorBtnPapas.style.textShadow = '3px -2px 8px rgba(233, 105, 0)';
 }
 
 // ABRIR MENU (EN MEDIA QUERY) 
@@ -114,6 +149,11 @@ function btnMenu () {
 botonAbrirModal.addEventListener("click",()=>{
     modal.showModal();
 });
+
+window.onclick = function (botonCerrarModal) {
+  if (Event.target === modal) {
+    modal.style.display ='none';}
+  }
 
 botonCerrarModal.addEventListener("click",()=>{
     modal.close();

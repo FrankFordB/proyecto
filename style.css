@@ -179,7 +179,9 @@ body {
 
 }
 
-
+.colorCambiado {
+    color: rgba(233, 105, 0, 0.979);
+}
 .banner_conteiner_vermapa:hover {
     background-color: rgba(199, 186, 167, 0.4);
     cursor: pointer;
@@ -283,7 +285,7 @@ body {
     text-decoration: none;
     color: var(--color-primario);
     transition: all 0.8s;
-    
+    cursor: pointer;
 }
 
 .header_selector_links:hover {
@@ -650,6 +652,7 @@ body {
     margin-top: 10px;
     display: flex;
     position: fixed;
+    cursor: pointer;
 }
 
 .boton-abrir-modal {
@@ -993,6 +996,14 @@ body {
         color: var(--color-primario);
     }
 
+    .header_selector_menu_desplegable p {
+        font-size: 18px;
+        color: var(--color-negro);
+        font-family: var(--fuente-krona);
+        text-decoration: none;
+        color: var(--color-primario);
+    }
+    
     .header_selector_madre {
         align-items: center;
         align-self: center;
@@ -1048,7 +1059,6 @@ body {
         width: 100%;
         padding: auto;
         border: none;
-
         margin: auto;
         border-radius: 0px;
 

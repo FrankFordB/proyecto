@@ -107,36 +107,36 @@
 
                     </main>
                     <!-- NAV--><!-- NAV--><!-- NAV--><!-- NAV--><!-- NAV-->
+                
                     <div id="menu_p">
                         <input type="checkbox" style="display: none;" onclick="btnMenu()" id="btn_menu">
                         <label for="btn_menu" style="cursor: pointer; font-size: 36px;"
                             class="header_selector_menu_desplegable">
                             <p></p>
                             <h5>Menú</h5>
-                            <p> =</p>
+                            <p>☰</p>
                         </label>
                     </div>
                     <div class="header_selector_madre" id="menuIHPP">
                         <label for="btn_menu" class="header_selector_links1">
                             <p></p>
                             <p>Menú</p><span>
-                                <p>=</p>
+                                <p>☰</p>
                             </span>
                         </label>
                         <input type="checkbox" style="display: none;" onclick="btnInicio()" id="btnInicio" >
-                        <label class="header_selector_links" for="btnInicio">Inicio</label>
+                        <label class="header_selector_links" for="btnInicio" id="colorBtnInicio">Inicio</label>
                         <input type="checkbox" style="display: none;" onclick="btnHacetupedido()" id="btnHacetupedido" >
-                        <label class="header_selector_links" for="btnHacetupedido">Hace tu pedido</label>
+                        <label class="header_selector_links" for="btnHacetupedido" id="colorBtnPedido">Hace tu pedido</label>
                         <input type="checkbox" style="display: none;" onclick="btnHamburguesas()" id="btnHamburguesa" >
-                        <label class="header_selector_links" for="btnHamburguesa">Hamburguesa</label>
+                        <label class="header_selector_links" for="btnHamburguesa" id="colorBtnHamburguesas">Hamburguesa</label>
                         <input type="checkbox" style="display: none;" onclick="btnPiletaChedar()" id="btnPiletaChedar" >
-                        <label class="header_selector_links" for="btnPiletaChedar">Pileta de cheddar</label>
+                        <label class="header_selector_links" for="btnPiletaChedar" id="chedarPileta">Pileta de cheddar</label>
                         <input type="checkbox" style="display: none;" onclick="btnPapas()" id="btnPapas" >
-                        <label class="header_selector_links" for="btnPapas">Papas</label>
-                        
+                        <label class="header_selector_links" for="btnPapas" id="colorBtnPapas">Papas</label>
+            
+        </div>
 
-
-                    </div>
             </div>
             </header>
             <!-- SELECTION --><!-- SELECTION --><!-- SELECTION --><!-- SELECTION -->
@@ -267,7 +267,7 @@
             <!-- PAGINA 2 HAMBURGUESAS --><!-- PAGINA 2 HAMBURGUESAS --><!-- PAGINA 2 HAMBURGUESAS --><!-- PAGINA 2 HAMBURGUESAS -->
     <div id="hamburguesa_pagina2">
             <div class="selection1">
-                <!-- HAMBURGUESAS COMIENZOA -->
+                
                 <H2 class="hamburguesa_titulo"> NUESTRAS HAMBURGUESAS</H2>
                 <div class="hamburguesa_contenido_master">
 
@@ -287,7 +287,7 @@
 
 
                                         <input type="radio" class="boton_cerrar_modal" id="boton-cerrar-modal1"></input>
-                                        <label class="X_modal" for="boton-cerrar-modal1">X</label>
+                                        <label class="X_modal" for="boton-cerrar-modal1">✖</label>
 
                                         <div class="modal_caja_de_foto"><img class="modal_foto"
                                                 src="Imagenes\Afrodita.png" /> </div>
@@ -443,11 +443,38 @@
                                 </div>
                             </dialog>
 
+<!-- COMIENZO DE HAMBURGUESAS PAGINA 2 --><!-- COMIENZO DE HAMBURGUESAS PAGINA 2 --><!-- COMIENZO DE HAMBURGUESAS PAGINA 2 -->
+                <div style="display: flex;">    
+                    <div>
+                        <div class="columna_hamburguesas">
+                        <!-- ACA EMPIEZA LA CHEESS SIMPLE -->
+                        <label for="boton-abrir-modal">
+                            <div class="hamburguesa_contenido_submaster">
 
+                                <div class="hamburguesa_contenido_imagen">
+                                    <img class="hamburguesa_contenido_imagen1"
+                                        src="./Imagenes\HaburguesaBacon11.jpg" alt="HamburguesaBacon"
+                                        id="linkbacon" />
+                                </div>
+                                <div id="linkbacon" class="hamburguesas_contenido_hijo">
+                                    <h2 id="linkbacon" class="hamburguesas_contenido_texto_titulo"> Bacon</h2>
+                                    <p id="linkbacon" class="hamburguesas_contenido_texto_parrafo1"> Hamburguesa con
+                                        bacon, doble cheddar, doble medallon de 110g.</p>
+                                    <p class="hamburguesas_contenido_texto_parrafo2"> $ 8.500,00</p>
+                                </div>
+                                <div id="linkbacon2" class="hamburguesas_contenido_texto_papas">
+                                    <p id="linkbacon2">Papas incluidas✅</p>
+                                </div>
 
+                            </div>
+                    </label>
+                    </div>
+                        <!-- ACA EMPIEZA LA AMERICANA -->
+                        <div class="columna_hamburguesas">
+                            <!-- ACA EMPIEZA LA CHEESS SIMPLE -->
                             <label for="boton-abrir-modal">
                                 <div class="hamburguesa_contenido_submaster">
-
+    
                                     <div class="hamburguesa_contenido_imagen">
                                         <img class="hamburguesa_contenido_imagen1"
                                             src="./Imagenes\HaburguesaBacon11.jpg" alt="HamburguesaBacon"
@@ -462,115 +489,117 @@
                                     <div id="linkbacon2" class="hamburguesas_contenido_texto_papas">
                                         <p id="linkbacon2">Papas incluidas✅</p>
                                     </div>
-
+    
                                 </div>
-                        </div>
                         </label>
-
-                        <!-- MODAL   --><!-- MODAL   --><!-- MODAL   --><!-- MODAL   --><!-- MODAL   --><!-- MODAL   -->
-
-
-                        <!-- ACA EMPIEZA LA CHESSE -->
-                        <a class="links" href="https://www.youtube.com/watch?v=35XFAkwmU4c" id="linkbacon">
-                            <div class="hamburguesa_contenido_submaster">
-                                <div class="hamburguesa_contenido_imagen">
-                                    <img class="hamburguesa_contenido_imagen1" src="Imagenes\Hamburguesa222.jpg"
-                                        alt="HamburguesaBacon" id="linkbacon" />
+                        </div>
+                        <!-- ACA EMPIEZA LA BLUECHESS -->
+                        <div class="columna_hamburguesas">
+                            <!-- ACA EMPIEZA LA CHEESS SIMPLE -->
+                            <label for="boton-abrir-modal">
+                                <div class="hamburguesa_contenido_submaster">
+    
+                                    <div class="hamburguesa_contenido_imagen">
+                                        <img class="hamburguesa_contenido_imagen1"
+                                            src="./Imagenes\HaburguesaBacon11.jpg" alt="HamburguesaBacon"
+                                            id="linkbacon" />
+                                    </div>
+                                    <div id="linkbacon" class="hamburguesas_contenido_hijo">
+                                        <h2 id="linkbacon" class="hamburguesas_contenido_texto_titulo"> Bacon</h2>
+                                        <p id="linkbacon" class="hamburguesas_contenido_texto_parrafo1"> Hamburguesa con
+                                            bacon, doble cheddar, doble medallon de 110g.</p>
+                                        <p class="hamburguesas_contenido_texto_parrafo2"> $ 8.500,00</p>
+                                    </div>
+                                    <div id="linkbacon2" class="hamburguesas_contenido_texto_papas">
+                                        <p id="linkbacon2">Papas incluidas✅</p>
+                                    </div>
+    
                                 </div>
-                                <div id="linkbacon" class="hamburguesas_contenido_hijo">
-                                    <h2 id="linkbacon" class="hamburguesas_contenido_texto_titulo"> Afrodita</h2>
-                                    <p id="linkbacon" class="hamburguesas_contenido_texto_parrafo1"> Hamburguesa con
-                                        cebolla caramelizada, y salsa de mostaza, doble cheddar, doble medallon de 110g.
-                                    </p>
-                                    <p class="hamburguesas_contenido_texto_parrafo2"> $ 8.500,00</p>
-                                </div>
-                                <div class="hamburguesas_contenido_texto_papas">
-                                    <p id="linkbacon">Papas incluidas✅</p>
-                                </div>
-                            </div>
-                        </a>
-                        <!-- ACA EMPIEZA LA AFRODITA -->
-                        <a class="links" href="https://www.youtube.com/watch?v=35XFAkwmU4c" id="linkbacon">
-                            <div class="hamburguesa_contenido_submaster">
-                                <div class="hamburguesa_contenido_imagen">
-                                    <img class="hamburguesa_contenido_imagen1" src="Imagenes\Hamburguesa333.jpg"
-                                        alt="HamburguesaBacon" id="linkbacon" />
-                                </div>
-                                <div id="linkbacon" class="hamburguesas_contenido_hijo">
-                                    <h2 id="linkbacon" class="hamburguesas_contenido_texto_titulo"> Americana</h2>
-                                    <p id="linkbacon" class="hamburguesas_contenido_texto_parrafo1"> Hamburguesa con
-                                        Lechuga, Tomate, Doble cheddar, Doble medallon de carne de 110g.</p>
-                                    <p class="hamburguesas_contenido_texto_parrafo2"> $ 8.500,00</p>
-                                </div>
-                                <div class="hamburguesas_contenido_texto_papas">
-                                    <p id="linkbacon">Papas incluidas✅</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                        </label>
+                        </div>
+                    </div>  
                     <!-- DIVISION DE 3 HAMBURGUESASDIVISION DE 3 HAMBURGUESASDIVISION DE 3 HAMBURGUESAS -->
+                <div>    
                     <div class="columna_hamburguesas">
                         <!-- ACA EMPIEZA LA CHEESS SIMPLE -->
-                        <a class="links" href="https://www.youtube.com/watch?v=35XFAkwmU4c" id="linkbacon">
+                        <label for="boton-abrir-modal">
                             <div class="hamburguesa_contenido_submaster">
+
                                 <div class="hamburguesa_contenido_imagen">
-                                    <img class="hamburguesa_contenido_imagen1" src="Imagenes\Hamburguesa444.jpg"
-                                        alt="HamburguesaBacon" id="linkbacon" />
+                                    <img class="hamburguesa_contenido_imagen1"
+                                        src="./Imagenes\HaburguesaBacon11.jpg" alt="HamburguesaBacon"
+                                        id="linkbacon" />
                                 </div>
                                 <div id="linkbacon" class="hamburguesas_contenido_hijo">
-                                    <h2 id="linkbacon" class="hamburguesas_contenido_texto_titulo"> Chesse burger</h2>
+                                    <h2 id="linkbacon" class="hamburguesas_contenido_texto_titulo"> Bacon</h2>
                                     <p id="linkbacon" class="hamburguesas_contenido_texto_parrafo1"> Hamburguesa con
-                                        Cuadruple Cheddar, Doble medallon de 110g.</p>
+                                        bacon, doble cheddar, doble medallon de 110g.</p>
                                     <p class="hamburguesas_contenido_texto_parrafo2"> $ 8.500,00</p>
                                 </div>
-                                <div class="hamburguesas_contenido_texto_papas">
-                                    <p id="linkbacon">Papas incluidas✅</p>
+                                <div id="linkbacon2" class="hamburguesas_contenido_texto_papas">
+                                    <p id="linkbacon2">Papas incluidas✅</p>
                                 </div>
+
                             </div>
-                        </a>
-                        <!-- ACA EMPIEZA LA AMERICANA -->
-                        <a class="links" href="https://www.youtube.com/watch?v=35XFAkwmU4c" id="linkbacon">
-                            <div class="hamburguesa_contenido_submaster">
-                                <div class="hamburguesa_contenido_imagen">
-                                    <img class="hamburguesa_contenido_imagen1" src="Imagenes\Hamburguesa555.jpg"
-                                        alt="HamburguesaBacon" id="linkbacon" />
-                                </div>
-                                <div id="linkbacon" class="hamburguesas_contenido_hijo">
-                                    <h2 id="linkbacon" class="hamburguesas_contenido_texto_titulo"> La sangre fría</h2>
-                                    <p id="linkbacon" class="hamburguesas_contenido_texto_parrafo1"> Hamburguesa con
-                                        Triple Cheddar, Un Medallon de 110g y un cuchillo.</p>
-                                    <p class="hamburguesas_contenido_texto_parrafo2"> $ 8.500,00</p>
-                                </div>
-                                <div class="hamburguesas_contenido_texto_papas">
-                                    <p id="linkbacon">Papas incluidas✅</p>
-                                </div>
-                            </div>
-                        </a>
-                        <!-- ACA EMPIEZA LA BLUECHESS -->
-                        <a class="links" href="https://www.youtube.com/watch?v=35XFAkwmU4c" id="linkbacon">
-                            <div class="hamburguesa_contenido_submaster">
-                                <div class="hamburguesa_contenido_imagen">
-                                    <img class="hamburguesa_contenido_imagen1" src="Imagenes\Hamburguesa666.jpg"
-                                        alt="HamburguesaBacon" id="linkbacon" />
-                                </div>
-                                <div id="linkbacon" class="hamburguesas_contenido_hijo">
-                                    <h2 id="linkbacon" class="hamburguesas_contenido_texto_titulo"> Chesse burger simple
-                                    </h2>
-                                    <p id="linkbacon" class="hamburguesas_contenido_texto_parrafo1"> Hamburguesa con
-                                        Triple Cheddar, Un Medallon de 110g.</p>
-                                    <p class="hamburguesas_contenido_texto_parrafo2"> $ 8.500,00</p>
-                                </div>
-                                <div class="hamburguesas_contenido_texto_papas">
-                                    <p id="linkbacon">Papas incluidas✅</p>
-                                </div>
-                            </div>
-                        </a>
+                    </label>
                     </div>
+                        <!-- ACA EMPIEZA LA AMERICANA -->
+                        <div class="columna_hamburguesas">
+                            <!-- ACA EMPIEZA LA CHEESS SIMPLE -->
+                            <label for="boton-abrir-modal">
+                                <div class="hamburguesa_contenido_submaster">
+    
+                                    <div class="hamburguesa_contenido_imagen">
+                                        <img class="hamburguesa_contenido_imagen1"
+                                            src="./Imagenes\HaburguesaBacon11.jpg" alt="HamburguesaBacon"
+                                            id="linkbacon" />
+                                    </div>
+                                    <div id="linkbacon" class="hamburguesas_contenido_hijo">
+                                        <h2 id="linkbacon" class="hamburguesas_contenido_texto_titulo"> Bacon</h2>
+                                        <p id="linkbacon" class="hamburguesas_contenido_texto_parrafo1"> Hamburguesa con
+                                            bacon, doble cheddar, doble medallon de 110g.</p>
+                                        <p class="hamburguesas_contenido_texto_parrafo2"> $ 8.500,00</p>
+                                    </div>
+                                    <div id="linkbacon2" class="hamburguesas_contenido_texto_papas">
+                                        <p id="linkbacon2">Papas incluidas✅</p>
+                                    </div>
+    
+                                </div>
+                        </label>
+                        </div>
+                        <!-- ACA EMPIEZA LA BLUECHESS -->
+                        <div class="columna_hamburguesas">
+                            <!-- ACA EMPIEZA LA CHEESS SIMPLE -->
+                            <label for="boton-abrir-modal">
+                                <div class="hamburguesa_contenido_submaster">
+    
+                                    <div class="hamburguesa_contenido_imagen">
+                                        <img class="hamburguesa_contenido_imagen1"
+                                            src="./Imagenes\HaburguesaBacon11.jpg" alt="HamburguesaBacon"
+                                            id="linkbacon" />
+                                    </div>
+                                    <div id="linkbacon" class="hamburguesas_contenido_hijo">
+                                        <h2 id="linkbacon" class="hamburguesas_contenido_texto_titulo"> Bacon</h2>
+                                        <p id="linkbacon" class="hamburguesas_contenido_texto_parrafo1"> Hamburguesa con
+                                            bacon, doble cheddar, doble medallon de 110g.</p>
+                                        <p class="hamburguesas_contenido_texto_parrafo2"> $ 8.500,00</p>
+                                    </div>
+                                    <div id="linkbacon2" class="hamburguesas_contenido_texto_papas">
+                                        <p id="linkbacon2">Papas incluidas✅</p>
+                                    </div>
+    
+                                </div>
+                        </label>
+                        </div>
+                    </div>
+                    <!-- DIVISION POR 3 FINAL -->
+                </div>
+                <!-- DIVISION TOTAL FINAL      -->
                 </div>
             </div>
         </div>
     </div>
-
+</div>
         <!-- FINAL PAGINA 2 --><!-- FINAL PAGINA 2 --><!-- FINAL PAGINA 2 --><!-- FINAL PAGINA 2 --><!-- FINAL PAGINA 2 -->
 
         <!-- INICIO PAGINA 3 --><!-- INICIO PAGINA 3 --><!-- INICIO PAGINA 3 --><!-- INICIO PAGINA 3 --><!-- INICIO PAGINA 3 -->
@@ -668,6 +697,7 @@
             </div>
         
     </div>
+</div>
 
         <!-- FINAL PAGINA 3 --><!-- FINAL PAGINA 3 --><!-- FINAL PAGINA 3 --><!-- FINAL PAGINA 3 --><!-- FINAL PAGINA 3 -->
 
