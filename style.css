@@ -374,7 +374,7 @@ body {
     font-family: var(--fuente-krona);
     text-decoration: none;
     color: var(--color-primario);
-    transition: all 0.8s;
+    transition: all 0.4s; 
     cursor: pointer;
 }
 
@@ -1477,9 +1477,10 @@ body {
 
 }
 .hamburguesas_contenido_texto_titulo{
-    background-color: #000000c4;
-    box-shadow: inset 1px -2px 8px #750c0cb4 ;
-    border-radius: 2px 2px 5px 5px;
+    background-color: #000000d5;
+    box-shadow-top: none;
+    box-shadow: inset 0px -1px 8px #81000070 ;
+    border-radius: 2px 4px 5px 5px;
     margin-top: 4%;
 }
 .hamburguesas_contenido_texto_parrafo1{
