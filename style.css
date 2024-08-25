@@ -95,18 +95,19 @@
     --fuente-montserrat: "Montserrat", sans-serif;
     ;
     --fuente-krona: "Krona One", sans-serif;
-
+}
     /* ICONOS */
 
-    font-family: var(--fuente-montserrat);
+    
 
 
     * {
         margin: 0;
         padding: 0;
         box-sizing: content-box;
+        
     }
-}
+
 
 .icono {
     border-radius: 40px;
@@ -573,6 +574,7 @@ body {
 .hamburguesa_contenido_submaster {
     display: flex;
     width: 89%;
+    max-width: 89%;
     align-items: flex-start;
     justify-content: center;
     background-color: rgba(144, 148, 150, 0.27);
@@ -580,6 +582,7 @@ body {
     border-bottom: solid #000000;
     cursor: pointer;
     margin-bottom: 3rem;
+    margin-right: auto;
     box-shadow: 5px -6px 3px rgb(15, 15, 15, .5);
 
 }
@@ -618,6 +621,7 @@ body {
     display: flex;
     margin-left: 1rem;
     width: 9.4rem;
+    max-width: 100%;
     align-self: flex-end;
     align-items: center;
     justify-content: end;
@@ -1324,7 +1328,6 @@ body {
 
     .inicio_hamburguesa_inicio1 {
         width: auto;
-
         padding: auto;
         flex-direction: column-reverse;
         align-items: center;
@@ -1411,48 +1414,104 @@ body {
     }
 
 
-}
+
 /* PAGINA DOS HAMBURGUESAS *//* PAGINA DOS HAMBURGUESAS *//* PAGINA DOS HAMBURGUESAS *//* PAGINA DOS HAMBURGUESAS */
 .contenedor_master_hamburguesas {
     flex-direction: column;
-    margin-left: -30px;
+    
     
 }
+.lab3el1 {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
 .columna_hamburguesas{
+    
     width: 95%;
 }
 
 .hamburguesas_contenido_hijo{
-    margin-left: 5%;
-    justify-content: center;
-}
-.hamburguesa_contenido_master{
-    width: 90%;
-    min-width: 90%;
     margin: 0px;
     justify-content: center;
+    align-self: center;
+    
+}
+.hamburguesa_contenido_master{
+    width: 80%;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    margin-left: 0%;
+    margin-right: 0px;
 }
 .hamburguesa_contenido_submaster {
     width: 99%;
-    max-width: 100%;
-    margin: 5%;
-    }
-
-.hamburguesas_contenido_texto_papas{
-    width: 15%;
-    font-size: 12px;
+    height: 25%;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 0px;   
+    margin-left: 5%; 
 }
 
+
+.hamburguesa_contenido_imagen{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+.hamburguesa_contenido_imagen1{
+    border-radius: 5px 5px 0px 0px;
+    margin: 0px;
+    width: 1500px;
+}
+
+.hamburguesas_label{
+    width: auto;
+
+}
+.hamburguesas_contenido_texto_titulo{
+    background-color: #000000c4;
+    box-shadow: inset 1px -2px 8px #750c0cb4 ;
+    border-radius: 2px 2px 5px 5px;
+    margin-top: 4%px;
+}
 .hamburguesas_contenido_texto_parrafo1{
     font-size: 11px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
 }
 .hamburguesas_contenido_texto_parrafo2{
     font-size: 14px;
-    width: 70%;
-    justify-content: end;
+    width: 100%;
+    margin-right: 0px;
+    justify-content: center;
+    
+    
+}
+.hamburguesas_contenido_texto_papas{
+    width: 55%;
+    display: flex;
+    align-content: center;
     align-self: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+    margin: 0px;
 }
 
+.hamburguesas_contenido_texto_papas p{
+    margin-bottom: 0%;
+}
 /* PAGINA 3 CHEDAR/* PAGINA 3 CHEDAR *//* PAGINA 3 CHEDAR *//* PAGINA 3 CHEDAR *//* PAGINA 3 CHEDAR*//* */
 
 .hola {
@@ -1466,7 +1525,7 @@ body {
 }
 
 .inicio_hamburguesa_h3 {
-    margin-top:-10%;
+    
     width: 500px;
 }
 .hamburguesa_contenido_master1{
@@ -1494,4 +1553,5 @@ body {
     width: 400px;
     max-width: 420px;
     
+}
 }
