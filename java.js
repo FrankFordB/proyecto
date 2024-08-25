@@ -7,11 +7,6 @@ const modal= document.querySelector("#modal");
 const menuIHPPCopia = document.getElementById('menuIHPPcopia');
 
 
-// if (menuOcultoP.style.display = 'none' || menuOcultoP.style.display == 'none') {
-//   menuIHPPCopia.style.display = ''; } else if (menuOcultoP.style.display = '' || menuOcultoP.style.display == '' ){
-//     menuIHPPCopia.style.display = 'none';
-//   }
-// VARIABLES DE PAGINAS 1 2 3 4
 
 const paginaUno = document.getElementById ('hamburguesa_pagina1');
 const paginaDos = document.getElementById ('hamburguesa_pagina2');

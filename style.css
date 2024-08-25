@@ -172,6 +172,12 @@ body {
 /* HEADER */
 /* HEADER */
 
+.carousel-control-prev-icon {
+    width: 200px;
+    font-size: 200px;
+    color: #000000;
+
+}
 .banner_conteiner {
     display: flex;
     width: 100%;
@@ -1072,6 +1078,8 @@ body {
     .header_selector_menu_desplegable {
         display: flex;
         flex-direction: row;
+        align-content: center;
+        align-self: center;
         justify-content: space-around;
         align-items: center;
         background-color: rgba(90, 115, 139, 0.1);
@@ -1093,6 +1101,7 @@ body {
         font-family: var(--fuente-krona);
         text-decoration: none;
         color: var(--color-primario);
+        margin-bottom: 0px;
     }
 
     .header_selector_menu_desplegable p {
@@ -1101,6 +1110,7 @@ body {
         font-family: var(--fuente-krona);
         text-decoration: none;
         color: var(--color-primario);
+        margin-bottom: 0px;
     }
 
     .header_selector_madre {
@@ -1137,7 +1147,7 @@ body {
         font-family: var(--fuente-krona);
         text-decoration: none;
         color: var(--color-primario);
-        gap: 120px;
+        gap: 100px;
         cursor: pointer;
         align-items: center;
         justify-content: center;
