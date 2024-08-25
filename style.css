@@ -194,6 +194,7 @@ body {
     display: flex;
     width: 90%;
     height: 100%;
+    
     background-image: url('Imagenes/bannermaderanegra.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -374,7 +375,7 @@ body {
     font-family: var(--fuente-krona);
     text-decoration: none;
     color: var(--color-primario);
-    transition: all 0.4s; 
+    transition: ease-in 0.3s; 
     cursor: pointer;
 }
 
@@ -1190,17 +1191,17 @@ body {
         align-items: center;
         flex-direction: column;
         align-self: center;
-        border-radius: 15px;
+        border-radius: 0px 10px 10px 0px;
 
     }
 
     .banner_conteiner_master {
-        width: 99%;
+        width: 100%;
         min-height: 16vh;
         max-height: 30px;
+        border-radius: 0px;
         background-color: none;
-        border-radius: 21px;
-        margin: auto;
+        margin: 0px;
         align-self: start;
         align-items: start;
         justify-content: start;
@@ -1373,7 +1374,6 @@ body {
 
     .inicio_hamburguesa_inicio_fotos {
         width: 100%;
-
         margin: auto;
         gap: 20px;
         align-content: center;
@@ -1478,7 +1478,6 @@ body {
 }
 .hamburguesas_contenido_texto_titulo{
     background-color: #000000d5;
-    box-shadow-top: none;
     box-shadow: inset 0px -1px 8px #81000070 ;
     border-radius: 2px 4px 5px 5px;
     margin-top: 4%;
