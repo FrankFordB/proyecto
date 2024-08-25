@@ -631,6 +631,7 @@ body {
 
 
 
+
 }
 
 .hamburguesas_contenido_hijo {
@@ -1479,7 +1480,7 @@ body {
     background-color: #000000c4;
     box-shadow: inset 1px -2px 8px #750c0cb4 ;
     border-radius: 2px 2px 5px 5px;
-    margin-top: 4%px;
+    margin-top: 4%;
 }
 .hamburguesas_contenido_texto_parrafo1{
     font-size: 11px;
