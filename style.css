@@ -442,9 +442,7 @@ body {
 
 .hamburguesa_contenido_master1 {
     display: flex;
-    align-content: center;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
     margin-top: 6rem;
     padding-bottom: 12%;
@@ -456,10 +454,12 @@ body {
 
 .hola {
     display: flex;
+    width: 100%;
 }
 
 .chau {
     display: flex;
+    width: 100%;
 }
 
 .inicio_hamburguesa_inicio {
@@ -593,6 +593,21 @@ body {
     box-shadow: 5px -6px 3px rgb(15, 15, 15, .5);
 
 }
+.hamburguesa_contenido_submaster_chedar {
+    display: flex;
+    width: 89%;
+    max-width: 89%;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: rgba(144, 148, 150, 0.27);
+    border-radius: 0.5rem;
+    border-bottom: solid #000000;
+    cursor: pointer;
+    margin-bottom: 3rem;
+    margin-right: auto;
+    box-shadow: 5px -6px 3px rgb(15, 15, 15, .5);
+
+}
 
 .hamburguesa_contenido_submaster:hover {
     background-color: rgba(144, 148, 150, 0.5);
@@ -615,12 +630,18 @@ body {
     width: 100%;
 }
 
-.hamburguesa_contenido_imagen {
-    width: 9rem;
+.hamburguesa_contenido_imagen2 {
+    border-radius: 0.5rem;
     display: flex;
-    align-self: center;
-    justify-content: center;
+    margin-left: 1rem;
+    width: 9.4rem;
+    max-width: 100%;
+    align-self: flex-end;
     align-items: center;
+    justify-content: end;
+    object-position: center;
+    object-fit: cover;
+    box-shadow: 5px -4px 3px rgb(15, 15, 15, .5);
 }
 
 .hamburguesa_contenido_imagen1 {
@@ -642,6 +663,16 @@ body {
 }
 
 .hamburguesas_contenido_hijo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    width: 70%;
+    justify-content: space-around;
+    height: 8rem;
+    margin-left: 1.5rem;
+
+}
+.hamburguesas_contenido_hijo_chedar {
     display: flex;
     flex-direction: column;
     margin-top: 0.5rem;
@@ -708,7 +739,7 @@ body {
 
 
 .titulos {
-    background-color: rgb(52, 255, 255);
+    background-color: rgb(255, 255, 255);
     width: 98%;
     border-radius: 20px;
     box-shadow: 0px 3px 5px rgb(15, 15, 15, .5);
@@ -1036,9 +1067,8 @@ body {
 }
 
 .cheddar_conteiner_precios {
-    padding-left: em;
-    width: 55rem;
-    margin-right: 6rem;
+    width: 100%;
+    
 }
 
 .cheddar_video {
@@ -1491,6 +1521,7 @@ body {
     box-shadow: inset 0px -1px 8px #81000070 ;
     border-radius: 2px 4px 5px 5px;
     margin-top: 4%;
+    text-align: center;
 }
 .hamburguesas_contenido_texto_parrafo1{
     font-size: 11px;
@@ -1525,27 +1556,29 @@ body {
 }
 /* PAGINA 3 CHEDAR/* PAGINA 3 CHEDAR *//* PAGINA 3 CHEDAR *//* PAGINA 3 CHEDAR *//* PAGINA 3 CHEDAR*//* */
 
+.selection1{
+    align-content: start;
+}
 .hola {
     flex-direction: column;
     align-items: center;
 }
 .chau {
     display: flex;
-    width: 550px;
-    margin-left: 10%;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+    margin-top: 0px;
+    
 }
 
 .inicio_hamburguesa_h3 {
-    
-    width: 500px;
+    width: 100%;
 }
-.hamburguesa_contenido_master1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .hamburguesas_contenido_texto_titulo{
     font-size: 22px;
+    color: var(--color-negro);
 }
 .Cheddar_video_madre{
     width: 100%;
@@ -1556,6 +1589,18 @@ body {
     align-content: center;
     align-self: center;
 }
+.hamburguesa_contenido_imagen2 {
+    border-radius: 0.5rem 0.5rem 0px 0px ;
+    display: flex;
+    width: 100%;
+    height: 28dvh;
+    align-self: flex-end;
+    align-items: center;
+    justify-content: end;
+    object-position: center;
+    object-fit: cover;
+    box-shadow: 5px -4px 3px rgb(15, 15, 15, .5);
+}
 .cheddar_video{
     display: flex;
     
@@ -1564,5 +1609,32 @@ body {
     width: 400px;
     max-width: 420px;
     
+}
+
+.cheddar_conteiner_precios{
+    margin-right: 0px;
+    width: 80%;
+}
+
+.hamburguesa_contenido_submaster_chedar{
+    width: 99%;
+    height: 35%;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 0px;   
+    margin-left: 5%;
+}
+.hamburguesa_contenido_master1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hamburguesas_contenido_hijo_chedar{
+    margin: 0px;
+    justify-content: center;
+    align-self: center;
 }
 }
