@@ -1486,6 +1486,7 @@ body {
     justify-content: center;
     margin-left: 0%;
     margin-right: 0px;
+    margin-top: 2rem;
 }
 .hamburguesa_contenido_submaster {
     width: 99%;
@@ -1631,6 +1632,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 2rem;
 }
 .hamburguesas_contenido_hijo_chedar{
     margin: 0px;
